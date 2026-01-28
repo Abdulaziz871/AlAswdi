@@ -1,0 +1,276 @@
+export const personalInfo = {
+    name: "ABDULAZIZ ALASWDI",
+    title: "Full Stack Developer and Designer",
+    summary: "A Software Engineer with over 4 years of experience in building comprehensive digital solutions that combine creative design and technical expertise. Experienced in both frontend and backend development, database designs. Passionate about data analytics and data science, eager to apply these skills to derive insights and drive data-informed decisions.",
+    age: 23,
+    education: "SOFTWARE ENGINEERING at the University of Pahang in Malaysia",
+    yearsOfExperience: 4,
+};
+
+export const contact = {
+    email: "aswadies.87@gmail.com",
+    phone: "+60103800852",
+    portfolio: "My Portfolio",
+    portfolioUrl: "https://abdulaziz871.github.io/cvaswdi/",
+};
+
+export const technicalSkills = [
+    { name: "HTML5", icon: "FaHtml5" },
+    { name: "CSS3", icon: "FaCss3Alt" },
+    { name: "PHP", icon: "FaPhp" },
+    { name: "Laravel", icon: "FaLaravel" },
+    { name: "Node.js", icon: "FaNodeJs" },
+    { name: "Python", icon: "FaPython" },
+    { name: "Next.js", icon: "SiNextdotjs" },
+    { name: "MySQL", icon: "SiMysql" },
+    { name: "Bootstrap", icon: "FaBootstrap" },
+    { name: "Power BI", icon: "SiPowerbi" },
+    { name: "Power Automate", icon: "SiPowerautomate" },
+    { name: "jQuery", icon: "SiJquery" },
+    { name: "Excel", icon: "SiMicrosoftexcel" },
+    { name: "C", icon: "SiC" },
+    { name: "AI", icon: "FaRobot" },
+];
+
+export const personalSkills = [
+    { name: "Leadership", icon: "FaUsers" },
+    { name: "Communication", icon: "FaComments" },
+    { name: "Data Analysis", icon: "FaChartLine" },
+    { name: "Project Management", icon: "FaTasks" },
+    { name: "Time Management", icon: "FaClock" },
+    { name: "Problem Solving", icon: "FaLightbulb" },
+];
+
+export const workExperience = [
+    {
+        company: "Swing - Creative Agency",
+        role: "Full Stack Developer & Designer",
+        period: "Current",
+        description: "Built the complete website using Webflow, from visual design to interactive experience, ensuring an attractive and user-friendly site. Also handled data entry and content, organizing pages and components to ensure logical user flow.",
+        achievements: [
+            "Designed and developed complete website using Webflow",
+            "Enhanced user interfaces and visual details",
+            "Reflected company identity professionally",
+        ],
+        link: "https://swing.sa/",
+    },
+    {
+        company: "Qomra - Online Store",
+        role: "Website Reviewer & Data Entry Specialist",
+        period: "2023-2024",
+        description: "Worked as a reviewer and tester for the website, responsible for testing all pages and ensuring they were free of technical errors and ensuring site readiness during maintenance or updates.",
+        achievements: [
+            "Entered data and added over 1,000 products",
+            "Organized and designed the store interface to enhance the shopping experience",
+            "Reviewed and verified product information and images before publishing",
+        ],
+        link: "https://qomra.pro/",
+    },
+    {
+        company: "AlAswdadi Art",
+        role: "Webflow Developer & Designer",
+        period: "2023",
+        description: "Developed the alaswadiart platform using Webflow, responsible for designing the site completely from scratch to reflect the brand identity professionally and attractively.",
+        achievements: [
+            "Complete website design from scratch",
+            "Data entry and content organization",
+            "Ensured ease of browsing and smooth user experience",
+        ],
+        link: "https://www.alaswadiart.com/",
+    },
+    {
+        company: "FatawaPedia",
+        role: "Full Stack Developer",
+        period: "2022-2023",
+        description: "Conducted a comprehensive review of the FatawaPedia website to identify programming errors, tested the user experience and provided feedback for improvement.",
+        achievements: [
+            "Comprehensive website review",
+            "User experience testing and feedback",
+            "Prepared detailed control panel explanation",
+        ],
+        link: "#",
+    },
+    {
+        company: "ServizULogistics",
+        role: "Web Developer",
+        period: "2022",
+        description: "Developed logistics management solutions and web applications for ServizU Logistics.",
+        achievements: [
+            "Built web applications for logistics management",
+            "Implemented efficient tracking systems",
+        ],
+        link: "#",
+    },
+    {
+        company: "HeadLine - Creative Agency",
+        role: "Frontend Developer & Designer",
+        period: "2022",
+        description: "Designed and developed a static landing page, displaying an elegant and simple interface, focusing on a design compatible with various devices.",
+        achievements: [
+            "Created professional landing page",
+            "Responsive design implementation",
+            "Focused on first impression for visitors",
+        ],
+        link: "https://headline-sa.com/",
+    },
+    {
+        company: "Alarjwan Restaurant",
+        role: "Web Developer",
+        period: "2021",
+        description: "Developed website solutions for Alarjwan Restaurant.",
+        achievements: [
+            "Built restaurant website",
+            "Implemented menu and ordering features",
+        ],
+        link: "#",
+    },
+    {
+        company: "Athkar",
+        role: "Web Developer",
+        period: "2021",
+        description: "Developed Islamic application for daily prayers and remembrance.",
+        achievements: [
+            "Created Islamic content platform",
+            "User-friendly interface design",
+        ],
+        link: "#",
+    },
+    {
+        company: "RapidPrint",
+        role: "Web Developer",
+        period: "2021",
+        description: "Developed web solutions for printing services.",
+        achievements: [
+            "Built printing service website",
+            "Implemented order management system",
+        ],
+        link: "#",
+    },
+    {
+        company: "Alsunna Website",
+        role: "Full Stack Developer & QA",
+        period: "2020-2021",
+        description: "Contributed to improving the Al-Sunna Center website through comprehensive programming review and testing all features and pages to ensure error-free and optimal performance.",
+        achievements: [
+            "Comprehensive programming review",
+            "Tested all features and pages",
+            "Prepared simplified control panel guide",
+            "Helped team manage and update content easily",
+        ],
+        link: "https://alsunna.net/",
+    },
+];
+
+export const projects = [
+    {
+        title: "Swing",
+        description: "Built the complete website using Webflow, from visual design to interactive experience. Handled data entry and content, organizing pages and components to ensure logical user flow.",
+        technologies: ["Webflow", "UI/UX Design"],
+        link: "https://swing.sa/",
+        image: "/images/projects/swing.png",
+        category: "Full-Stack",
+    },
+    {
+        title: "Qomra Store",
+        description: "E-commerce platform with over 1,000 products. Worked as reviewer and tester, responsible for data entry, product verification, and interface design to enhance shopping experience.",
+        technologies: ["E-commerce", "Data Management", "UI/UX"],
+        link: "https://qomra.pro/",
+        image: "/images/projects/qomrah.png",
+        category: "Maintenance and quality assurance",
+    },
+    {
+        title: "AlAswdadi Art",
+        description: "Developed the platform using Webflow, designed the site completely from scratch to reflect the brand identity professionally and attractively.",
+        technologies: ["Webflow", "Branding", "UI/UX Design"],
+        link: "https://www.alaswadiart.com/",
+        image: "/images/projects/alaswdi.png",
+        category: "Full-Stack",
+    },
+    {
+        title: "IslamHouse Services",
+        description: "Created a dedicated page for Dar Al-Islam services, collecting all services in an organized and easily accessible manner. Entered over 500 services in multiple languages and developed a custom control panel.",
+        technologies: ["Multilingual", "CMS", "Backend Development"],
+        link: "#",
+        image: "/images/projects/islamhouse.png",
+        category: "Full-Stack",
+    },
+    {
+        title: "HeadLine Landing Page",
+        description: "Designed and developed a static landing page with an elegant and simple interface, focusing on responsive design compatible with various devices.",
+        technologies: ["HTML", "CSS", "Responsive Design"],
+        link: "https://headline-sa.com/",
+        image: "/images/projects/headline.png",
+        category: "Front-End",
+    },
+    {
+        title: "Al-Sunna Center",
+        description: "Contributed to improving the website through comprehensive programming review and testing. Prepared a simplified control panel guide for content management.",
+        technologies: ["Full Stack", "QA Testing", "Documentation"],
+        link: "https://alsunna.net/",
+        image: "/images/projects/alssuna.png",
+        category: "Maintenance and quality assurance",
+    },
+    {
+        title: "FatawaPedia",
+        description: "Conducted comprehensive review to identify programming errors, tested user experience and provided feedback for improvement. Prepared detailed control panel explanation.",
+        technologies: ["Testing", "QA", "User Experience"],
+        link: "#",
+        image: "/images/projects/fatawa.png",
+        category: "Maintenance and quality assurance",
+    },
+    {
+        title: "Alarjwan Restaurant",
+        description: "Developed website solutions for restaurant including menu display and ordering features.",
+        technologies: ["Web Development", "Restaurant Management"],
+        link: "#",
+        image: "/images/projects/arjwan.png",
+        category: "Front-End",
+    },
+    {
+        title: "ServizULogistics",
+        description: "Developed logistics management solutions and web applications with efficient tracking systems.",
+        technologies: ["Logistics", "Tracking Systems", "Web Apps"],
+        link: "#",
+        image: "/images/projects/ser.png",
+        category: "Front-End",
+    },
+    {
+        title: "Athkar",
+        description: "Developed Islamic application for daily prayers and remembrance with user-friendly interface.",
+        technologies: ["Mobile Development", "Islamic Content"],
+        link: "#",
+        image: "/images/projects/athkar.png",
+        category: "Front-End",
+    },
+    {
+        title: "Volunteer Portal",
+        description: "Developed a dedicated portal to collect volunteers through the Dar Al-Islam website. Designed and implemented an easy-to-use interface for registration and participation.",
+        technologies: ["Web Development", "Database", "Forms"],
+        link: "https://islamhouse.com/volunteer/",
+        image: "/images/projects/volunteer.png",
+        category: "Front-End",
+    },
+];
+
+export const education = {
+    institution: "University of Pahang Alsultan Abdullah",
+    degree: "Bachelor of Computer Science (Software Engineering) with Honours",
+    period: "2022-2026",
+    gpa: "3.5/4.00",
+    location: "Malaysia",
+};
+
+export const certifications = [
+    {
+        name: "Microsoft Power BI Data Analyst",
+        issuer: "Microsoft",
+        year: "2025",
+        icon: "SiPowerbi",
+    },
+    {
+        name: "Power Automate: Building and Managing Automated Workflows",
+        issuer: "Microsoft",
+        year: "2025",
+        icon: "SiPowerautomate",
+    },
+];
