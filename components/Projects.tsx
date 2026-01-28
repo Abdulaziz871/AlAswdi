@@ -5,7 +5,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import Image from "next/image";
 import { useState } from "react";
 
-type ProjectCategory = "All" | "Front-End" | "Full-Stack" | "Maintenance and quality assurance" | "Power BI";
+type ProjectCategory = "All" | "Development" | "Maintenance and quality assurance" | "Power BI & Data Analytics";
 
 export default function Projects() {
     const [visibleCount, setVisibleCount] = useState(4);
@@ -25,10 +25,9 @@ export default function Projects() {
 
     const categories: ProjectCategory[] = [
         "All",
-        "Front-End",
-        "Full-Stack",
+        "Development",
         "Maintenance and quality assurance",
-        "Power BI"
+        "Power BI & Data Analytics"
     ];
 
     const handleCategoryChange = (category: ProjectCategory) => {

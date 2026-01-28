@@ -1,7 +1,7 @@
 export const personalInfo = {
     name: "ABDULAZIZ ALASWDI",
     title: "Full Stack Developer and Designer",
-    summary: "A Software Engineer with over 4 years of experience in building comprehensive digital solutions that combine creative design and technical expertise. Experienced in both frontend and backend development, database designs. Passionate about data analytics and data science, eager to apply these skills to derive insights and drive data-informed decisions.",
+    summary: "A Software Engineer with over 4 years of experience in building comprehensive digital solutions that combine creative design and technical expertise. Experienced in both frontend and backend development, database designs. Passionate about Power BI & Data Analytics and data science, eager to apply these skills to derive insights and drive data-informed decisions.",
     age: 23,
     education: "SOFTWARE ENGINEERING at the University of Pahang in Malaysia",
     yearsOfExperience: 4,
@@ -168,7 +168,7 @@ export const projects = [
         technologies: ["Webflow", "UI/UX Design"],
         link: "https://swing.sa/",
         image: "/images/projects/swing.png",
-        category: "Full-Stack",
+        category: "Development",
     },
     {
         title: "Qomra Store",
@@ -184,7 +184,7 @@ export const projects = [
         technologies: ["Webflow", "Branding", "UI/UX Design"],
         link: "https://www.alaswadiart.com/",
         image: "/images/projects/alaswdi.png",
-        category: "Full-Stack",
+        category: "Development",
     },
     {
         title: "IslamHouse Services",
@@ -192,7 +192,7 @@ export const projects = [
         technologies: ["Multilingual", "CMS", "Backend Development"],
         link: "#",
         image: "/images/projects/islamhouse.png",
-        category: "Full-Stack",
+        category: "Development",
     },
     {
         title: "HeadLine Landing Page",
@@ -200,7 +200,7 @@ export const projects = [
         technologies: ["HTML", "CSS", "Responsive Design"],
         link: "https://headline-sa.com/",
         image: "/images/projects/headline.png",
-        category: "Front-End",
+        category: "Development",
     },
     {
         title: "Al-Sunna Center",
@@ -224,7 +224,7 @@ export const projects = [
         technologies: ["Web Development", "Restaurant Management"],
         link: "#",
         image: "/images/projects/arjwan.png",
-        category: "Front-End",
+        category: "Development",
     },
     {
         title: "ServizULogistics",
@@ -232,7 +232,7 @@ export const projects = [
         technologies: ["Logistics", "Tracking Systems", "Web Apps"],
         link: "#",
         image: "/images/projects/ser.png",
-        category: "Front-End",
+        category: "Development",
     },
     {
         title: "Athkar",
@@ -240,7 +240,7 @@ export const projects = [
         technologies: ["Mobile Development", "Islamic Content"],
         link: "#",
         image: "/images/projects/athkar.png",
-        category: "Front-End",
+        category: "Development",
     },
     {
         title: "Volunteer Portal",
@@ -248,7 +248,39 @@ export const projects = [
         technologies: ["Web Development", "Database", "Forms"],
         link: "https://islamhouse.com/volunteer/",
         image: "/images/projects/volunteer.png",
-        category: "Front-End",
+        category: "Development",
+    },
+    {
+        title: "FatawaPedia Dashboard",
+        description: "Provides user and traffic insights for a digital platform. It displays new users, traffic sources (direct, search, social, referral), user activity events, and active users (daily, weekly, monthly). Geographic distribution of users is shown via a world map and country pie chart, with a date filter for recent days.",
+        technologies: ["Power BI", "Data Analysis", "Data Visualization"],
+        link: "#",
+        image: "/images/projects/FatawaDash.png",
+        category: "Power BI & Data Analytics",
+    },
+    {
+        title: "Jobs Dashboard 02",
+        description: "Shows a high-level overview of the global data job market. It highlights total job count, average skills required per job, and median salaries (yearly and hourly). The dashboard also visualizes the most in-demand skills (e.g., Python, SQL, Cloud) and compares median salaries across data-related job titles, with filters for job title and country.",
+        technologies: ["Power BI", "Data Analysis", "Data Visualization"],
+        link: "https://app.powerbi.com/view?r=eyJrIjoiN2VkOWM5YWItODNkOC00MzkyLWE3MWUtNzY4YTY2NDUzNDdkIiwidCI6IjdmMDQ4ZmMxLTJlYTMtNDhlNC1hYzkyLTkxZDFlYjA5ODA3YyIsImMiOjEwfQ%3D%3D",
+        image: "/images/projects/jobs02.png",
+        category: "Power BI & Data Analytics",
+    },
+    {
+        title: "Sales Dashboard",
+        description: "Focuses on business performance over time. It tracks monthly sales alongside profit margin trends, allowing quick comparison of revenue vs profitability. Additional visuals break down sales by country and product category, and show total quantities sold per category, with slicers for year and region.",
+        technologies: ["Power BI", "Data Analysis", "Data Visualization"],
+        link: "https://app.powerbi.com/view?r=eyJrIjoiODRlMTRjZjAtMWEwYi00MGIwLTg5ZWYtNzM1YmVhZDFiMWJmIiwidCI6IjdmMDQ4ZmMxLTJlYTMtNDhlNC1hYzkyLTkxZDFlYjA5ODA3YyIsImMiOjEwfQ%3D%3D",
+        image: "/images/projects/sales.png",
+        category: "Power BI & Data Analytics",
+    },
+    {
+        title: "Jobs Dashboard 01",
+        description: "Offers a detailed analytical view of data-related roles. It includes job count, average job rating, and median salaries, plus trends of job postings over time. Scatter plots compare hourly vs yearly pay by role, bar charts show job counts per title, and a detailed table summarizes job statistics with trends for each role.",
+        technologies: ["Power BI", "Data Analysis", "Data Visualization"],
+        link: "https://app.powerbi.com/view?r=eyJrIjoiYTczODMxZjItNzM2Zi00OTdmLThhNjQtNDhlYjBlYmRhNTI3IiwidCI6IjdmMDQ4ZmMxLTJlYTMtNDhlNC1hYzkyLTkxZDFlYjA5ODA3YyIsImMiOjEwfQ%3D%3D",
+        image: "/images/projects/jobs01.png",
+        category: "Power BI & Data Analytics",
     },
 ];
 
