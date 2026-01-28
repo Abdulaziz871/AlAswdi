@@ -263,7 +263,7 @@ export const projects = [
         description: "Shows a high-level overview of the global data job market. It highlights total job count, average skills required per job, and median salaries (yearly and hourly). The dashboard also visualizes the most in-demand skills (e.g., Python, SQL, Cloud) and compares median salaries across data-related job titles, with filters for job title and country.",
         technologies: ["Power BI", "Data Analysis", "Data Visualization"],
         link: "https://app.powerbi.com/view?r=eyJrIjoiN2VkOWM5YWItODNkOC00MzkyLWE3MWUtNzY4YTY2NDUzNDdkIiwidCI6IjdmMDQ4ZmMxLTJlYTMtNDhlNC1hYzkyLTkxZDFlYjA5ODA3YyIsImMiOjEwfQ%3D%3D",
-        image: "/images/projects/jobs02.png",
+        image: "/images/projects/Jobs02.png",
         category: "Power BI & Data Analytics",
     },
     {
@@ -279,7 +279,7 @@ export const projects = [
         description: "Offers a detailed analytical view of data-related roles. It includes job count, average job rating, and median salaries, plus trends of job postings over time. Scatter plots compare hourly vs yearly pay by role, bar charts show job counts per title, and a detailed table summarizes job statistics with trends for each role.",
         technologies: ["Power BI", "Data Analysis", "Data Visualization"],
         link: "https://app.powerbi.com/view?r=eyJrIjoiYTczODMxZjItNzM2Zi00OTdmLThhNjQtNDhlYjBlYmRhNTI3IiwidCI6IjdmMDQ4ZmMxLTJlYTMtNDhlNC1hYzkyLTkxZDFlYjA5ODA3YyIsImMiOjEwfQ%3D%3D",
-        image: "/images/projects/jobs01.png",
+        image: "/images/projects/Jobs01.png",
         category: "Power BI & Data Analytics",
     },
 ];
