@@ -1,34 +1,64 @@
 "use client";
 
-import { projects } from "@/data/portfolio";
+import { getPortfolioContent } from "@/data/portfolio";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useLanguage } from "@/components/LanguageProvider";
 
-type ProjectCategory = "All" | "Development" | "Maintenance and quality assurance" | "Power BI & Data Analytics";
+type ProjectCategory = string;
 
 export default function Projects() {
+    const { language } = useLanguage();
+    const { projects } = getPortfolioContent(language);
+
+    const categoryMap = {
+        ar: ["الكل", "تطوير", "صيانة وضمان الجودة", "Power BI وتحليل البيانات"],
+        en: ["All", "Development", "Maintenance and QA", "Power BI & Data Analytics"],
+    };
+
+    const copy = {
+        ar: {
+            titleBefore: "",
+            titleHighlight: "المشاريع",
+            titleAfter: " المميزة",
+            viewProject: "عرض المشروع",
+            showMore: "عرض المزيد من المشاريع",
+            remaining: "متبقي",
+            noProjects: "لا توجد مشاريع ضمن هذا التصنيف.",
+        },
+        en: {
+            titleBefore: "Featured ",
+            titleHighlight: "Projects",
+            titleAfter: "",
+            viewProject: "View Live Project",
+            showMore: "Show More Projects",
+            remaining: "remaining",
+            noProjects: "No projects found in this category.",
+        },
+    }[language];
+
     const [visibleCount, setVisibleCount] = useState(4);
-    const [selectedCategory, setSelectedCategory] = useState<ProjectCategory>("All");
+    const [selectedCategory, setSelectedCategory] = useState<ProjectCategory>(categoryMap[language][0]);
+
+    useEffect(() => {
+        setSelectedCategory(categoryMap[language][0]);
+        setVisibleCount(4);
+    }, [language]);
 
     const showMore = () => {
         setVisibleCount(prev => Math.min(prev + 4, filteredProjects.length));
     };
 
     // Filter projects based on selected category
-    const filteredProjects = selectedCategory === "All"
+    const filteredProjects = selectedCategory === categoryMap[language][0]
         ? projects
         : projects.filter(project => project.category === selectedCategory);
 
     const visibleProjects = filteredProjects.slice(0, visibleCount);
     const hasMore = visibleCount < filteredProjects.length;
 
-    const categories: ProjectCategory[] = [
-        "All",
-        "Development",
-        "Maintenance and quality assurance",
-        "Power BI & Data Analytics"
-    ];
+    const categories: ProjectCategory[] = categoryMap[language];
 
     const handleCategoryChange = (category: ProjectCategory) => {
         setSelectedCategory(category);
@@ -39,7 +69,7 @@ export default function Projects() {
         <section id="projects" className="section-padding bg-background">
             <div className="max-w-6xl mx-auto px-6">
                 <h2 className="section-title wow animate__fadeInDown">
-                    Featured <span className="gradient-text">Projects</span>
+                    {copy.titleBefore}<span className="gradient-text">{copy.titleHighlight}</span>{copy.titleAfter}
                 </h2>
 
                 {/* Category Filter */}
@@ -50,7 +80,7 @@ export default function Projects() {
                             onClick={() => handleCategoryChange(category)}
                             className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${selectedCategory === category
                                 ? "bg-white text-black"
-                                : "bg-white/10 text-white hover:bg-white/20"
+                                : "bg-white/10 text-text hover:bg-white/20"
                                 }`}
                         >
                             {category}
@@ -80,10 +110,10 @@ export default function Projects() {
                                 {/* Project Info */}
                                 <div className="space-y-4">
                                     <div className="flex items-center gap-3">
-                                        <h3 className="text-3xl font-bold group-hover:text-white transition-colors">
+                                        <h3 className="text-3xl font-bold text-text group-hover:text-text transition-colors">
                                             {project.title}
                                         </h3>
-                                        <span className="text-xs bg-white/10 text-white px-3 py-1 rounded-full">
+                                        <span className="text-xs bg-white/10 text-text px-3 py-1 rounded-full">
                                             {project.category}
                                         </span>
                                     </div>
@@ -97,7 +127,7 @@ export default function Projects() {
                                         {project.technologies.map((tech, i) => (
                                             <span
                                                 key={i}
-                                                className="text-sm bg-white/10 text-white px-4 py-2 rounded-full font-medium"
+                                                className="text-sm bg-white/10 text-text px-4 py-2 rounded-full font-medium"
                                             >
                                                 {tech}
                                             </span>
@@ -110,9 +140,9 @@ export default function Projects() {
                                             href={project.link}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="inline-flex items-center gap-2 text-white hover:text-gray-300 transition-colors font-semibold text-lg group/link"
+                                            className="inline-flex items-center gap-2 text-text hover:text-text/70 transition-colors font-semibold text-lg group/link"
                                         >
-                                            <span>View Live Project</span>
+                                            <span>{copy.viewProject}</span>
                                             <FaExternalLinkAlt className="text-base group-hover/link:translate-x-1 transition-transform" />
                                         </a>
                                     )}
@@ -129,7 +159,7 @@ export default function Projects() {
                             onClick={showMore}
                             className="btn-primary px-12 py-4 text-lg"
                         >
-                            Show More Projects ({filteredProjects.length - visibleCount} remaining)
+                            {copy.showMore} ({filteredProjects.length - visibleCount} {copy.remaining})
                         </button>
                     </div>
                 )}
@@ -137,7 +167,7 @@ export default function Projects() {
                 {/* No projects message */}
                 {filteredProjects.length === 0 && (
                     <div className="text-center py-12">
-                        <p className="text-text/60 text-lg">No projects found in this category.</p>
+                        <p className="text-text/60 text-lg">{copy.noProjects}</p>
                     </div>
                 )}
             </div>

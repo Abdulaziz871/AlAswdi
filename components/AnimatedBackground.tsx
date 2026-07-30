@@ -109,7 +109,10 @@ export default function AnimatedBackground() {
                 style={{ width: '100vw', height: '100vh' }}
             />
             {/* Semi-transparent overlay for better text readability */}
-            <div className="fixed inset-0 -z-10 bg-black/40 backdrop-blur-[1px]" style={{ zIndex: -9 }} />
+            <div
+                className="fixed inset-0 -z-10 bg-black/40 backdrop-blur-[1px]"
+                style={{ zIndex: -9 }}
+            />
         </>
     );
 }

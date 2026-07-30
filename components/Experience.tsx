@@ -1,14 +1,22 @@
 "use client";
 
-import { workExperience } from "@/data/portfolio";
+import { getPortfolioContent } from "@/data/portfolio";
 import { FaBriefcase, FaExternalLinkAlt } from "react-icons/fa";
+import { useLanguage } from "@/components/LanguageProvider";
 
 export default function Experience() {
+    const { language } = useLanguage();
+    const { workExperience } = getPortfolioContent(language);
+    const title = language === "ar" ? "الخبرات" : "Experience";
+    const titlePrefix = language === "ar" ? "" : "Work ";
+    const titleSuffix = language === "ar" ? " العملية" : "";
+    const viewProject = language === "ar" ? "عرض المشروع" : "View Project";
+
     return (
         <section id="experience" className="section-padding bg-hover/30">
             <div className="container-custom">
                 <h2 className="section-title wow animate__fadeInDown">
-                    Work <span className="gradient-text">Experience</span>
+                    {titlePrefix}<span className="gradient-text">{title}</span>{titleSuffix}
                 </h2>
 
                 <div className="max-w-4xl mx-auto">
@@ -56,7 +64,7 @@ export default function Experience() {
                                         rel="noopener noreferrer"
                                         className="inline-flex items-center gap-2 text-primary hover:text-primaryHover transition-colors"
                                     >
-                                        <span>View Project</span>
+                                        <span>{viewProject}</span>
                                         <FaExternalLinkAlt className="text-sm" />
                                     </a>
                                 )}

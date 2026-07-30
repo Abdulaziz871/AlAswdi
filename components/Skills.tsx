@@ -1,7 +1,8 @@
 "use client";
 
-import { technicalSkills } from "@/data/portfolio";
+import { getPortfolioContent } from "@/data/portfolio";
 import { useEffect, useRef } from "react";
+import { useLanguage } from "@/components/LanguageProvider";
 import {
   FaHtml5, FaCss3Alt, FaPhp, FaLaravel, FaNodeJs, FaPython,
   FaBootstrap, FaChartBar, FaDatabase, FaRobot, FaFileExcel
@@ -15,6 +16,9 @@ const iconMap: { [key: string]: any } = {
 };
 
 export default function Skills() {
+  const { language } = useLanguage();
+  const { technicalSkills } = getPortfolioContent(language);
+
   const scrollerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -36,7 +40,7 @@ export default function Skills() {
     <section id="skills" className="">
       <div className="container-custom">
         <h2 className="section-title wow animate__fadeInDown">
-          <span className="gradient-text">Skill-Set</span>
+          <span className="gradient-text">{language === "ar" ? "المهارات" : "Skills"}</span>
         </h2>
 
         {/* Infinite Scrolling Skills Carousel */}

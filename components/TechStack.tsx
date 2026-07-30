@@ -6,35 +6,61 @@ import {
     SiMongodb, SiGooglegemini
 } from "react-icons/si";
 import { BiCodeAlt } from "react-icons/bi";
+import { useLanguage } from "@/components/LanguageProvider";
 
-const techStack = [
-    { name: "Git", icon: FaGitAlt, category: "Version Control", size: "medium" },
-    { name: "GitHub", icon: FaGithub, category: "Version Control", size: "large" },
-    { name: "VS Code", icon: FaCode, category: "Development Tools", size: "medium" },
-    { name: "Figma", icon: FaFigma, category: "Design Tools", size: "small" },
-    { name: "Vercel", icon: SiVercel, category: "Deployment", size: "large" },
-    { name: "Sketch AI", icon: BiCodeAlt, category: "AI Tools", size: "medium" },
-    { name: "Gemini", icon: SiGooglegemini, category: "AI Tools", size: "medium" },
-    { name: "OpenAI", icon: SiOpenai, category: "AI Tools", size: "large" },
-    { name: "Render", icon: SiRender, category: "Deployment", size: "medium" },
-    { name: "Cursor", icon: BiCodeAlt, category: "Development Tools", size: "medium" },
-    { name: "HuggingFace", icon: BiCodeAlt, category: "AI Tools", size: "medium" },
-    { name: "RESTful API", icon: BiCodeAlt, category: "Backend", size: "large" },
-    { name: "MongoDB", icon: SiMongodb, category: "Database", size: "small" },
-    { name: "LLM", icon: BiCodeAlt, category: "AI Tools", size: "small" },
-    { name: "Agile", icon: BiCodeAlt, category: "Methodology", size: "medium" },
-    { name: "Antigravity", icon: BiCodeAlt, category: "Tools", size: "medium" },
-];
+const techStackByLanguage = {
+    ar: [
+        { name: "Git", icon: FaGitAlt, category: "التحكم بالإصدارات", size: "medium" },
+        { name: "GitHub", icon: FaGithub, category: "التحكم بالإصدارات", size: "large" },
+        { name: "VS Code", icon: FaCode, category: "أدوات التطوير", size: "medium" },
+        { name: "Figma", icon: FaFigma, category: "أدوات التصميم", size: "small" },
+        { name: "Vercel", icon: SiVercel, category: "النشر", size: "large" },
+        { name: "Sketch AI", icon: BiCodeAlt, category: "أدوات الذكاء الاصطناعي", size: "medium" },
+        { name: "Gemini", icon: SiGooglegemini, category: "أدوات الذكاء الاصطناعي", size: "medium" },
+        { name: "OpenAI", icon: SiOpenai, category: "أدوات الذكاء الاصطناعي", size: "large" },
+        { name: "Render", icon: SiRender, category: "النشر", size: "medium" },
+        { name: "Cursor", icon: BiCodeAlt, category: "أدوات التطوير", size: "medium" },
+        { name: "HuggingFace", icon: BiCodeAlt, category: "أدوات الذكاء الاصطناعي", size: "medium" },
+        { name: "RESTful API", icon: BiCodeAlt, category: "الواجهة الخلفية", size: "large" },
+        { name: "MongoDB", icon: SiMongodb, category: "قواعد البيانات", size: "small" },
+        { name: "LLM", icon: BiCodeAlt, category: "أدوات الذكاء الاصطناعي", size: "small" },
+        { name: "Agile", icon: BiCodeAlt, category: "المنهجية", size: "medium" },
+        { name: "Antigravity", icon: BiCodeAlt, category: "الأدوات", size: "medium" },
+    ],
+    en: [
+        { name: "Git", icon: FaGitAlt, category: "Version Control", size: "medium" },
+        { name: "GitHub", icon: FaGithub, category: "Version Control", size: "large" },
+        { name: "VS Code", icon: FaCode, category: "Development Tools", size: "medium" },
+        { name: "Figma", icon: FaFigma, category: "Design Tools", size: "small" },
+        { name: "Vercel", icon: SiVercel, category: "Deployment", size: "large" },
+        { name: "Sketch AI", icon: BiCodeAlt, category: "AI Tools", size: "medium" },
+        { name: "Gemini", icon: SiGooglegemini, category: "AI Tools", size: "medium" },
+        { name: "OpenAI", icon: SiOpenai, category: "AI Tools", size: "large" },
+        { name: "Render", icon: SiRender, category: "Deployment", size: "medium" },
+        { name: "Cursor", icon: BiCodeAlt, category: "Development Tools", size: "medium" },
+        { name: "HuggingFace", icon: BiCodeAlt, category: "AI Tools", size: "medium" },
+        { name: "RESTful API", icon: BiCodeAlt, category: "Backend", size: "large" },
+        { name: "MongoDB", icon: SiMongodb, category: "Database", size: "small" },
+        { name: "LLM", icon: BiCodeAlt, category: "AI Tools", size: "small" },
+        { name: "Agile", icon: BiCodeAlt, category: "Methodology", size: "medium" },
+        { name: "Antigravity", icon: BiCodeAlt, category: "Tools", size: "medium" },
+    ],
+};
 
 export default function TechStack() {
+    const { language } = useLanguage();
+    const techStack = techStackByLanguage[language];
+
     return (
         <section className="section-padding bg-background">
             <div className="container-custom">
                 <h2 className="section-title wow animate__fadeInDown">
-                    Tech Stack & <span className="gradient-text">Tools</span>
+                    {language === "ar" ? "التقنيات و" : "Tech Stack & "}<span className="gradient-text">{language === "ar" ? "الأدوات" : "Tools"}</span>
                 </h2>
                 <p className="text-center text-text/70 mb-12 text-lg wow animate__fadeInUp">
-                    Technologies and tools I use to bring ideas to life
+                    {language === "ar"
+                        ? "التقنيات والأدوات التي أستخدمها لتحويل الأفكار إلى واقع"
+                        : "Technologies and tools I use to bring ideas to life"}
                 </p>
 
                 {/* Bento Grid Layout */}
@@ -50,7 +76,7 @@ export default function TechStack() {
                         const gridClass = sizeClasses[tech.size as keyof typeof sizeClasses];
 
                         return (
-                            <div style={{ backgroundColor: "#000" }}
+                            <div
                                 key={index}
                                 className={`${gridClass} group relative overflow-hidden rounded-2xl bg-white/5 border border-white/10 hover:border-white/30 transition-all duration-500 hover:bg-white/10 wow animate__fadeInUp`}
                                 data-wow-delay={`${index * 0.05}s`}
@@ -61,18 +87,18 @@ export default function TechStack() {
                                 {/* Content */}
                                 <div className="relative h-full flex flex-col items-center justify-center p-4 text-center">
                                     <tech.icon
-                                        className={`text-white mb-3 transition-transform duration-500 group-hover:scale-110 ${tech.size === 'large' ? 'text-6xl' :
+                                        className={`text-text mb-3 transition-transform duration-500 group-hover:scale-110 ${tech.size === 'large' ? 'text-6xl' :
                                             tech.size === 'medium' ? 'text-5xl' :
                                                 'text-4xl'
                                             }`}
                                     />
-                                    <h3 className={`font-bold text-white ${tech.size === 'large' ? 'text-xl' :
+                                    <h3 className={`font-bold text-text ${tech.size === 'large' ? 'text-xl' :
                                         tech.size === 'medium' ? 'text-lg' :
                                             'text-base'
                                         }`}>
                                         {tech.name}
                                     </h3>
-                                    <p className={`text-white/60 mt-1 ${tech.size === 'small' ? 'text-xs' : 'text-sm'
+                                    <p className={`text-text/60 mt-1 ${tech.size === 'small' ? 'text-xs' : 'text-sm'
                                         }`}>
                                         {tech.category}
                                     </p>

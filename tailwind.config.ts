@@ -14,6 +14,10 @@ export default {
                 primary: "#FFFFFF",
                 primaryHover: "#f2f2f2",
                 text: "#FFFFFF",
+                card: "var(--card)",
+                "card-foreground": "var(--card-foreground)",
+                "muted-foreground": "var(--muted-text)",
+                border: "var(--border-color)",
             },
             fontFamily: {
                 sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],

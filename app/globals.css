@@ -2,12 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "The Year of Handicrafts";
+  src: url("/TheYearOfHandicrafts.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PP Neue Montreal";
+  src: url("/PPNeueMontreal-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
 :root {
   --background: #000000;
   --hover: #222222;
   --primary: #FFF;
   --primary-hover: #f2f2f2;
   --text: #FFFFFF;
+  --muted-text: rgba(255, 255, 255, 0.7);
+  --card: #111111;
+  --card-foreground: #FFFFFF;
+  --border-color: rgba(255, 255, 255, 0.12);
+  --font-year-of-handi: "The Year of Handicrafts";
+  --font-pp-neue: "PP Neue Montreal";
 }
 
 * {
@@ -20,11 +38,80 @@ html {
   scroll-behavior: smooth;
 }
 
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
 body {
   background-color: var(--background);
   color: var(--text);
-  font-family: var(--font-pt-sans), system-ui, -apple-system, sans-serif;
-  overflow-x: hidden;
+font-family: var(--font-year-of-handi), "Noto Naskh Arabic", "Segoe UI", Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 34px;
+  height: 34px;
+  border: 2px solid rgba(255, 255, 255, 0.95);
+  border-radius: 9999px;
+  transform: translate(-50%, -50%) scale(0.8);
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0;
+  transition: transform 0.18s ease, width 0.18s ease, height 0.18s ease, opacity 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+  box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+.custom-cursor--visible {
+  opacity: 1;
+}
+
+.custom-cursor--active {
+  width: 56px;
+  height: 56px;
+  border-color: rgba(255, 255, 255, 0.95);
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.6);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@media (pointer: fine) {
+  .custom-cursor-enabled,
+  .custom-cursor-enabled body,
+  .custom-cursor-enabled a,
+  .custom-cursor-enabled button,
+  .custom-cursor-enabled input,
+  .custom-cursor-enabled textarea,
+  .custom-cursor-enabled select,
+  .custom-cursor-enabled [role="button"] {
+    cursor: none !important;
+  }
+}
+
+@media (pointer: coarse) {
+  .custom-cursor {
+    display: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.section-title {
+  font-family: var(--font-year-of-handi), "Noto Naskh Arabic", "Segoe UI", Tahoma, sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1, "kern" 1, "ss01" 1, "ss02" 1, "ss03" 1;
 }
 
 /* Custom Scrollbar */

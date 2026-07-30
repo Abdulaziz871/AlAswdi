@@ -1,7 +1,8 @@
 "use client";
 
-import { education, certifications } from "@/data/portfolio";
+import { getPortfolioContent } from "@/data/portfolio";
 import { FaGraduationCap, FaCertificate, FaChartBar, FaDatabase } from "react-icons/fa";
+import { useLanguage } from "@/components/LanguageProvider";
 
 const certIconMap: { [key: string]: any } = {
     SiPowerbi: FaChartBar,
@@ -9,11 +10,28 @@ const certIconMap: { [key: string]: any } = {
 };
 
 export default function Education() {
+    const { language } = useLanguage();
+    const { education, certifications } = getPortfolioContent(language);
+    const copy = {
+        ar: {
+            titleBefore: "التعليم و",
+            titleHighlight: "الشهادات",
+            gpa: "المعدل",
+            certs: "الشهادات والاعتمادات",
+        },
+        en: {
+            titleBefore: "Education & ",
+            titleHighlight: "Certifications",
+            gpa: "GPA",
+            certs: "Certifications & Licenses",
+        },
+    }[language];
+
     return (
         <section id="education" className="section-padding bg-hover/30">
             <div className="container-custom">
                 <h2 className="section-title wow animate__fadeInDown">
-                    Education & <span className="gradient-text">Certifications</span>
+                    {copy.titleBefore}<span className="gradient-text">{copy.titleHighlight}</span>
                 </h2>
 
                 <div className="max-w-4xl mx-auto">
@@ -30,7 +48,7 @@ export default function Education() {
                                     <div className="flex flex-wrap gap-4 text-text/70">
                                         <span>📍 {education.location}</span>
                                         <span>📅 {education.period}</span>
-                                        <span className="font-semibold text-primary">GPA: {education.gpa}</span>
+                                        <span className="font-semibold text-primary">{copy.gpa}: {education.gpa}</span>
                                     </div>
                                 </div>
                             </div>
@@ -40,7 +58,7 @@ export default function Education() {
                     {/* Certifications */}
                     <div>
                         <h3 className="text-2xl font-semibold mb-8 text-center">
-                            Certifications & Licenses
+                            {copy.certs}
                         </h3>
                         <div className="grid md:grid-cols-2 gap-6">
                             {certifications.map((cert, index) => {
