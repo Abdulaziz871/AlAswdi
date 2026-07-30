@@ -198,12 +198,102 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         category: "تطوير",
       },
       {
+        title: "صفحة هبوط HeadLine",
+        description:
+          "تصميم وتطوير صفحة هبوط ثابتة بواجهة أنيقة وبسيطة، مع التركيز على تصميم متجاوب يتوافق مع مختلف الأجهزة.",
+        technologies: ["HTML", "CSS", "تصميم متجاوب"],
+        link: "https://headline-sa.com/",
+        image: "/images/projects/headline.png",
+        category: "تطوير",
+      },
+      {
+        title: "مركز السنة",
+        description:
+          "المساهمة في تحسين الموقع من خلال مراجعة برمجية شاملة واختبار جميع الميزات، مع إعداد دليل مبسط للوحة التحكم لإدارة المحتوى.",
+        technologies: ["Full Stack", "اختبار الجودة", "توثيق"],
+        link: "https://alsunna.net/",
+        image: "/images/projects/alssuna.png",
+        category: "صيانة وضمان الجودة",
+      },
+      {
+        title: "فتاوى بيديا",
+        description:
+          "إجراء مراجعة شاملة لاكتشاف الأخطاء البرمجية واختبار تجربة المستخدم وتقديم ملاحظات تطويرية، مع إعداد شرح تفصيلي للوحة التحكم.",
+        technologies: ["اختبار", "ضمان الجودة", "تجربة المستخدم"],
+        link: "https://fatawapedia.com/",
+        image: "/images/projects/fatawa.png",
+        category: "صيانة وضمان الجودة",
+      },
+      {
+        title: "مطعم الأرجوان",
+        description:
+          "تطوير حلول موقع إلكتروني للمطعم شملت عرض قائمة الطعام وميزات الطلب.",
+        technologies: ["تطوير ويب", "إدارة المطاعم"],
+        link: "https://abdulaziz871.github.io/arj/",
+        image: "/images/projects/arjwan.png",
+        category: "تطوير",
+      },
+      {
+        title: "ServizULogistics",
+        description:
+          "تطوير حلول إدارة لوجستية وتطبيقات ويب مع أنظمة تتبع فعالة.",
+        technologies: ["لوجستيات", "أنظمة تتبع", "تطبيقات ويب"],
+        link: "https://abdulaziz871.github.io/ServizULogistics/",
+        image: "/images/projects/ser.png",
+        category: "تطوير",
+      },
+      {
+        title: "أذكار",
+        description:
+          "تطوير تطبيق إسلامي للأذكار والأدعية اليومية بواجهة سهلة الاستخدام.",
+        technologies: ["تطوير تطبيقات", "محتوى إسلامي"],
+        link: "http://athkar.atwebpages.com/",
+        image: "/images/projects/athkar.png",
+        category: "تطوير",
+      },
+      {
+        title: "بوابة التطوع",
+        description:
+          "تطوير بوابة مخصصة لجمع المتطوعين عبر موقع دار الإسلام، مع تصميم وتنفيذ واجهة سهلة للتسجيل والمشاركة.",
+        technologies: ["تطوير ويب", "قواعد البيانات", "نماذج"],
+        link: "#",
+        image: "/images/projects/volunteer.png",
+        category: "تطوير",
+      },
+      {
+        title: "لوحة تحكم فتاوى بيديا",
+        description:
+          "توفر رؤى حول المستخدمين وحركة الزوار لمنصة رقمية، وتعرض المستخدمين الجدد ومصادر الزيارات ونشاط المستخدمين والمستخدمين النشطين (يوميًا وأسبوعيًا وشهريًا)، مع توزيع جغرافي عبر خريطة العالم ومخطط دائري للدول وفلتر للتاريخ.",
+        technologies: ["Power BI", "تحليل البيانات", "تصور البيانات"],
+        link: "#",
+        image: "/images/projects/FatawaDash.png",
+        category: "Power BI وتحليل البيانات",
+      },
+      {
+        title: "لوحة تحكم الوظائف 02",
+        description:
+          "تعرض نظرة عامة على سوق وظائف البيانات العالمي، وتُبرز إجمالي عدد الوظائف ومتوسط المهارات المطلوبة لكل وظيفة والرواتب المتوسطة (السنوية والساعية)، مع تصور لأكثر المهارات طلبًا ومقارنة الرواتب حسب المسمى الوظيفي والدولة.",
+        technologies: ["Power BI", "تحليل البيانات", "تصور البيانات"],
+        link: "https://app.powerbi.com/view?r=eyJrIjoiN2VkOWM5YWItODNkOC00MzkyLWE3MWUtNzY4YTY2NDUzNDdkIiwidCI6IjdmMDQ4ZmMxLTJlYTMtNDhlNC1hYzkyLTkxZDFlYjA5ODA3YyIsImMiOjEwfQ%3D%3D",
+        image: "/images/projects/Jobs02.png",
+        category: "Power BI وتحليل البيانات",
+      },
+      {
         title: "لوحة المبيعات",
         description:
           "تركز على أداء الأعمال عبر الزمن من خلال تتبع المبيعات الشهرية واتجاهات هامش الربح، مع تفاصيل حسب الدولة وفئة المنتج والكميات المباعة ومرشحات للسنة والمنطقة.",
         technologies: ["Power BI", "تحليل البيانات", "تصور البيانات"],
         link: "https://app.powerbi.com/view?r=eyJrIjoiODRlMTRjZjAtMWEwYi00MGIwLTg5ZWYtNzM1YmVhZDFiMWJmIiwidCI6IjdmMDQ4ZmMxLTJlYTMtNDhlNC1hYzkyLTkxZDFlYjA5ODA3YyIsImMiOjEwfQ%3D%3D",
         image: "/images/projects/sales.png",
+        category: "Power BI وتحليل البيانات",
+      },
+      {
+        title: "لوحة تحكم الوظائف 01",
+        description:
+          "يقدم تحليلاً تفصيليًا للأدوار المرتبطة بالبيانات، ويشمل عدد الوظائف ومتوسط تقييمها والرواتب المتوسطة، إضافة إلى اتجاهات نشر الوظائف عبر الزمن ومقارنات الأجور حسب الدور.",
+        technologies: ["Power BI", "تحليل البيانات", "تصور البيانات"],
+        link: "https://app.powerbi.com/view?r=eyJrIjoiYTczODMxZjItNzM2Zi00OTdmLThhNjQtNDhlYjBlYmRhNTI3IiwidCI6IjdmMDQ4ZmMxLTJlYTMtNDhlNC1hYzkyLTkxZDFlYjA5ODA3YyIsImMiOjEwfQ%3D%3D",
+        image: "/images/projects/Jobs01.png",
         category: "Power BI وتحليل البيانات",
       },
     ],
@@ -346,12 +436,102 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         category: "Development",
       },
       {
+        title: "HeadLine Landing Page",
+        description:
+          "Designed and developed a static landing page with an elegant and simple interface, focusing on responsive design compatible with various devices.",
+        technologies: ["HTML", "CSS", "Responsive Design"],
+        link: "https://headline-sa.com/",
+        image: "/images/projects/headline.png",
+        category: "Development",
+      },
+      {
+        title: "Al-Sunna Center",
+        description:
+          "Contributed to improving the website through comprehensive programming review and testing. Prepared a simplified control panel guide for content management.",
+        technologies: ["Full Stack", "QA Testing", "Documentation"],
+        link: "https://alsunna.net/",
+        image: "/images/projects/alssuna.png",
+        category: "Maintenance and QA",
+      },
+      {
+        title: "FatawaPedia",
+        description:
+          "Conducted comprehensive review to identify programming errors, tested user experience and provided feedback for improvement. Prepared detailed control panel explanation.",
+        technologies: ["Testing", "QA", "User Experience"],
+        link: "https://fatawapedia.com/",
+        image: "/images/projects/fatawa.png",
+        category: "Maintenance and QA",
+      },
+      {
+        title: "Alarjwan Restaurant",
+        description:
+          "Developed website solutions for restaurant including menu display and ordering features.",
+        technologies: ["Web Development", "Restaurant Management"],
+        link: "https://abdulaziz871.github.io/arj/",
+        image: "/images/projects/arjwan.png",
+        category: "Development",
+      },
+      {
+        title: "ServizULogistics",
+        description:
+          "Developed logistics management solutions and web applications with efficient tracking systems.",
+        technologies: ["Logistics", "Tracking Systems", "Web Apps"],
+        link: "https://abdulaziz871.github.io/ServizULogistics/",
+        image: "/images/projects/ser.png",
+        category: "Development",
+      },
+      {
+        title: "Athkar",
+        description:
+          "Developed Islamic application for daily prayers and remembrance with user-friendly interface.",
+        technologies: ["Mobile Development", "Islamic Content"],
+        link: "http://athkar.atwebpages.com/",
+        image: "/images/projects/athkar.png",
+        category: "Development",
+      },
+      {
+        title: "Volunteer Portal",
+        description:
+          "Developed a dedicated portal to collect volunteers through the Dar Al-Islam website. Designed and implemented an easy-to-use interface for registration and participation.",
+        technologies: ["Web Development", "Database", "Forms"],
+        link: "#",
+        image: "/images/projects/volunteer.png",
+        category: "Development",
+      },
+      {
+        title: "FatawaPedia Dashboard",
+        description:
+          "Provides user and traffic insights for a digital platform. It displays new users, traffic sources (direct, search, social, referral), user activity events, and active users (daily, weekly, monthly). Geographic distribution of users is shown via a world map and country pie chart, with a date filter for recent days.",
+        technologies: ["Power BI", "Data Analysis", "Data Visualization"],
+        link: "#",
+        image: "/images/projects/FatawaDash.png",
+        category: "Power BI & Data Analytics",
+      },
+      {
+        title: "Jobs Dashboard 02",
+        description:
+          "Shows a high-level overview of the global data job market. It highlights total job count, average skills required per job, and median salaries (yearly and hourly). The dashboard also visualizes the most in-demand skills and compares median salaries across data-related job titles, with filters for job title and country.",
+        technologies: ["Power BI", "Data Analysis", "Data Visualization"],
+        link: "https://app.powerbi.com/view?r=eyJrIjoiN2VkOWM5YWItODNkOC00MzkyLWE3MWUtNzY4YTY2NDUzNDdkIiwidCI6IjdmMDQ4ZmMxLTJlYTMtNDhlNC1hYzkyLTkxZDFlYjA5ODA3YyIsImMiOjEwfQ%3D%3D",
+        image: "/images/projects/Jobs02.png",
+        category: "Power BI & Data Analytics",
+      },
+      {
         title: "Sales Dashboard",
         description:
           "Focuses on business performance over time, tracking monthly sales, profit margin, and regional/product breakdowns.",
         technologies: ["Power BI", "Data Analysis", "Data Visualization"],
         link: "https://app.powerbi.com/view?r=eyJrIjoiODRlMTRjZjAtMWEwYi00MGIwLTg5ZWYtNzM1YmVhZDFiMWJmIiwidCI6IjdmMDQ4ZmMxLTJlYTMtNDhlNC1hYzkyLTkxZDFlYjA5ODA3YyIsImMiOjEwfQ%3D%3D",
         image: "/images/projects/sales.png",
+        category: "Power BI & Data Analytics",
+      },
+      {
+        title: "Jobs Dashboard 01",
+        description:
+          "Offers a detailed analytical view of data-related roles. It includes job count, average job rating, and median salaries, plus trends of job postings over time. Scatter plots compare hourly vs yearly pay by role, bar charts show job counts per title, and a detailed table summarizes job statistics with trends for each role.",
+        technologies: ["Power BI", "Data Analysis", "Data Visualization"],
+        link: "https://app.powerbi.com/view?r=eyJrIjoiYTczODMxZjItNzM2Zi00OTdmLThhNjQtNDhlYjBlYmRhNTI3IiwidCI6IjdmMDQ4ZmMxLTJlYTMtNDhlNC1hYzkyLTkxZDFlYjA5ODA3YyIsImMiOjEwfQ%3D%3D",
+        image: "/images/projects/Jobs01.png",
         category: "Power BI & Data Analytics",
       },
     ],
