@@ -21,7 +21,6 @@ export default function Projects() {
         ar: {
             titleBefore: "",
             titleHighlight: "المشاريع",
-            titleAfter: " المميزة",
             viewProject: "عرض المشروع",
             showMore: "عرض المزيد من المشاريع",
             remaining: "متبقي",

@@ -170,6 +170,24 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         image: "/images/projects/swing.png",
         category: "تطوير",
       },
+            {
+        title: "Idea Vault",
+        description:
+          "منصة شخصية لحفظ الأفكار والملاحظات والروابط والملفات في مكان واحد، مع تحليل وتلخيص تلقائي بالذكاء الاصطناعي لتسهيل البحث والرجوع للمحتوى المحفوظ لاحقًا.",
+        technologies: ["دمج الذكاء الاصطناعي", "Full Stack", "تصميم UI/UX"],
+        link: "#",
+        image: "/images/projects/idea.png",
+        category: "تطوير",
+      },
+      {
+        title: "منصة بحث السنة",
+        description:
+          "منصة بحثية تتيح للباحثين لصق نص الحديث للحصول فورًا على أقرب الشروح المطابقة من الكتب المرفوعة، مع تلخيص لأقوال الشراح من عدة مؤلفين.",
+        technologies: ["NextJs", "RAG", "محرك بحث"],
+        link: "#",
+        image: "/images/projects/hadith.png",
+        category: "تطوير",
+      },
       {
         title: "متجر قمرة",
         description:
@@ -406,6 +424,24 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         technologies: ["Webflow", "UI/UX Design"],
         link: "https://swing.sa/",
         image: "/images/projects/swing.png",
+        category: "Development",
+      },
+            {
+        title: "Idea Vault",
+        description:
+          "A personal knowledge hub for capturing ideas, notes, links, and files in one place, with AI-generated summaries and analysis to make saved content easy to search and revisit.",
+        technologies: ["AI Integration", "Full Stack", "UI/UX Design"],
+        link: "#",
+        image: "/images/projects/idea.png",
+        category: "Development",
+      },
+      {
+        title: "Sunnah Hadith Search",
+        description:
+          "A research platform where scholars can paste a hadith text and instantly find the closest matching explanations from uploaded reference books, with summarized commentary pulled from multiple authors.",
+        technologies: ["NextJs", "RAG", "Search Engine"],
+        link: "#",
+        image: "/images/projects/hadith.png",
         category: "Development",
       },
       {
