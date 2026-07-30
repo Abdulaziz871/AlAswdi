@@ -7,7 +7,7 @@ import SmoothScroll from "@/components/SmoothScroll";
 
 export const metadata: Metadata = {
     title: "Abdulaziz AlAswdi | عبدالعزيز الأسودي",
-    description: "Bilingual portfolio website in Arabic and English for Abdulaziz AlAswdi.",
+    description: "Portfolio website for Abdulaziz AlAswdi.",
     keywords: ["Portfolio", "Abdulaziz AlAswdi", "Arabic", "English", "Full Stack Developer"],
     authors: [{ name: "Abdulaziz AlAswdi" }],
     openGraph: {
