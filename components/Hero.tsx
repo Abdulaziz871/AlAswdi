@@ -96,7 +96,7 @@ export default function Hero() {
                             </Link>
                         </motion.div>
                         <motion.a
-                            href="/Abdulaziz Resume.pdf"
+                            href="/Abdulaziz_AlAswdi_Resume.pdf"
                             download="Abdulaziz_AlAswdi_Resume.pdf"
                             className="px-8 py-3 bg-white text-black rounded-lg font-semibold hover:bg-gray-200 transition-all duration-300 inline-flex items-center gap-2"
                             whileHover={{ scale: 1.03 }}

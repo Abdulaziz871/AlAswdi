@@ -31,7 +31,6 @@ export default function Contact() {
             send: "إرسال الرسالة",
             success: "تم إرسال الرسالة بنجاح!",
             rights: "© 2026 عبدالعزيز الأسودي. جميع الحقوق محفوظة.",
-            builtWith: "تم التطوير باستخدام Next.js وReact وFramer Motion",
         },
         en: {
             titleBefore: "Get In ",
@@ -53,7 +52,6 @@ export default function Contact() {
             send: "Send Message",
             success: "Message sent successfully!",
             rights: "© 2026 Abdulaziz AlAswdi. All rights reserved.",
-            builtWith: "Built with Next.js, React, and Framer Motion",
         },
     }[language];
 
@@ -263,7 +261,6 @@ export default function Contact() {
                 {/* Footer */}
                 <div className="mt-20 pt-8 border-t border-white/20 text-center text-text/60">
                     <p>{copy.rights}</p>
-                    <p className="mt-2 text-sm">{copy.builtWith}</p>
                 </div>
             </div>
         </section>
