@@ -175,7 +175,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         description:
           "منصة شخصية لحفظ الأفكار والملاحظات والروابط والملفات في مكان واحد، مع تحليل وتلخيص تلقائي بالذكاء الاصطناعي لتسهيل البحث والرجوع للمحتوى المحفوظ لاحقًا.",
         technologies: ["دمج الذكاء الاصطناعي", "Full Stack", "تصميم UI/UX"],
-        link: "#",
+        link: "https://ai-powered-memos.vercel.app/",
         image: "/images/projects/idea.png",
         category: "تطوير",
       },
@@ -184,7 +184,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         description:
           "منصة بحثية تتيح للباحثين لصق نص الحديث للحصول فورًا على أقرب الشروح المطابقة من الكتب المرفوعة، مع تلخيص لأقوال الشراح من عدة مؤلفين.",
         technologies: ["NextJs", "RAG", "محرك بحث"],
-        link: "#",
+        link: "https://deep-search-hadith.vercel.app/",
         image: "/images/projects/hadith.png",
         category: "تطوير",
       },
@@ -431,7 +431,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         description:
           "A personal knowledge hub for capturing ideas, notes, links, and files in one place, with AI-generated summaries and analysis to make saved content easy to search and revisit.",
         technologies: ["AI Integration", "Full Stack", "UI/UX Design"],
-        link: "#",
+        link: "https://ai-powered-memos.vercel.app/",
         image: "/images/projects/idea.png",
         category: "Development",
       },
@@ -440,7 +440,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         description:
           "A research platform where scholars can paste a hadith text and instantly find the closest matching explanations from uploaded reference books, with summarized commentary pulled from multiple authors.",
         technologies: ["NextJs", "RAG", "Search Engine"],
-        link: "#",
+        link: "https://deep-search-hadith.vercel.app/",
         image: "/images/projects/hadith.png",
         category: "Development",
       },
