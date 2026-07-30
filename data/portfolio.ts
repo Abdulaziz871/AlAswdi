@@ -84,10 +84,10 @@ export const portfolioData: Record<Language, PortfolioContent> = {
   ar: {
     personalInfo: {
       name: "عبدالعزيـــز الأســــودي",
-      title: "مطور ويب متكامل ومصمم",
+      title: "مطور ويب ومصمم",
       summary:
         "مهندس برمجيات بخبرة تتجاوز 4 سنوات في بناء حلول رقمية متكاملة تجمع بين التصميم الإبداعي والخبرة التقنية. لدي خبرة في تطوير الواجهات الأمامية والخلفية وتصميم قواعد البيانات، مع شغف بتحليل البيانات وPower BI وعلوم البيانات لتوليد رؤى تدعم اتخاذ القرار.",
-      age: 23,
+      age: 24,
       education: "هندسة البرمجيات - جامعة باهانغ في ماليزيا",
       yearsOfExperience: 4,
     },
@@ -95,7 +95,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
       email: "aswadies.87@gmail.com",
       phone: "+60103800852",
       portfolio: "معرض أعمالي",
-      portfolioUrl: "https://abdulaziz871.github.io/cvaswdi/",
+      portfolioUrl: "https://alaswdi.vercel.app/",
     },
     technicalSkills,
     personalSkills: [
@@ -343,7 +343,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
       title: "Full Stack Developer and Designer",
       summary:
         "A Software Engineer with over 4 years of experience in building comprehensive digital solutions that combine creative design and technical expertise. Experienced in both frontend and backend development and database design. Passionate about Power BI, Data Analytics, and data science to derive insights and drive data-informed decisions.",
-      age: 23,
+      age: 24,
       education: "Software Engineering at the University of Pahang in Malaysia",
       yearsOfExperience: 4,
     },
@@ -351,7 +351,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
       email: "aswadies.87@gmail.com",
       phone: "+60103800852",
       portfolio: "My Portfolio",
-      portfolioUrl: "https://abdulaziz871.github.io/cvaswdi/",
+      portfolioUrl: "https://alaswdi.vercel.app/",
     },
     technicalSkills,
     personalSkills: [
@@ -431,7 +431,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         description:
           "A personal knowledge hub for capturing ideas, notes, links, and files in one place, with AI-generated summaries and analysis to make saved content easy to search and revisit.",
         technologies: ["AI Integration", "Full Stack", "UI/UX Design"],
-        link: "https://ai-powered-memos.vercel.app/",
+        link: "#",
         image: "/images/projects/idea.png",
         category: "Development",
       },
@@ -440,7 +440,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         description:
           "A research platform where scholars can paste a hadith text and instantly find the closest matching explanations from uploaded reference books, with summarized commentary pulled from multiple authors.",
         technologies: ["NextJs", "RAG", "Search Engine"],
-        link: "https://deep-search-hadith.vercel.app/",
+        link: "#",
         image: "/images/projects/hadith.png",
         category: "Development",
       },
