@@ -31,7 +31,7 @@ export default function Hero() {
             intro: "مرحبـــاً، أنا",
             yearsExperience: "سنوات من",
             experience: "الخبــرة",
-            yearsAge: "سنة",
+            yearsAge: "مشروع",
             age: "",
             contact: "تواصل معي",
             projects: "عرض المشاريع",
@@ -41,8 +41,8 @@ export default function Hero() {
             intro: "Hi, I'm",
             yearsExperience: "Years",
             experience: "Experience",
-            yearsAge: "Years",
-            age: "Old",
+            yearsAge: "Projects",
+            age: "",
             contact: "Get In Touch",
             projects: "View Projects",
             resume: "Download Resume",
@@ -77,7 +77,7 @@ export default function Hero() {
                         </div>
                         <div className="w-px h-12 bg-white/30"></div>
                         <div className="flex items-center gap-2">
-                            <span className="text-4xl font-bold gradient-text">{personalInfo.age}</span>
+                            <span className="text-4xl font-bold gradient-text">+15</span>
                             <span className="text-sm text-text/60">{copy.yearsAge}<br />{copy.age}</span>
                         </div>
                     </motion.div>
