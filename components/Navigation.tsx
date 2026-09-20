@@ -2,11 +2,14 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useLanguage } from "@/components/LanguageProvider";
 
 export default function Navigation() {
     const { language, toggleLanguage } = useLanguage();
+    const pathname = usePathname();
+    const isHome = pathname === "/";
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [activeSection, setActiveSection] = useState("home");
@@ -35,16 +38,22 @@ export default function Navigation() {
     }[language];
 
     const navLinks = [
-        { name: copy.home, href: "#home" },
-        { name: copy.skills, href: "#skills" },
-        { name: copy.projects, href: "#projects" },
-        { name: copy.education, href: "#education" },
-        { name: copy.contact, href: "#contact" },
+        { name: copy.home, href: "/#home" },
+        { name: copy.skills, href: "/#skills" },
+        { name: copy.projects, href: "/#projects" },
+        { name: copy.education, href: "/#education" },
+        { name: copy.contact, href: "/#contact" },
     ];
 
     const sections = ["home", "skills", "projects", "education", "contact"];
 
     useEffect(() => {
+        if (!isHome) {
+            setIsScrolled(true);
+            setActiveSection("");
+            return;
+        }
+
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50);
 
@@ -62,9 +71,11 @@ export default function Navigation() {
             }
         };
 
+        handleScroll();
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [isHome]);
 
     return (
         <nav
@@ -76,7 +87,7 @@ export default function Navigation() {
             <div className="container-custom">
                 <div className="flex items-center justify-between h-20">
                     <Link
-                        href="#home"
+                        href="/#home"
                         className="text-2xl font-bold tracking-wider group"
                     >
                         <span className="text-white group-hover:text-gray-300 transition-colors duration-300">
@@ -87,7 +98,7 @@ export default function Navigation() {
 
                     <div className="hidden md:flex items-center gap-1">
                         {navLinks.map((link) => {
-                            const isActive = activeSection === link.href.substring(1);
+                            const isActive = activeSection === link.href.split("#")[1];
                             return (
                                 <Link
                                     key={link.name}
@@ -107,7 +118,7 @@ export default function Navigation() {
                         })}
 
                         <Link
-                            href="#contact"
+                            href="/#contact"
                             className="ml-4 px-6 py-2.5 bg-white text-black text-sm font-semibold rounded-lg hover:bg-gray-200 transition-all duration-300 shadow-lg shadow-white/20 hover:shadow-white/30"
                         >
                             {copy.talk}
@@ -137,7 +148,7 @@ export default function Navigation() {
             >
                 <div className="bg-black/95 backdrop-blur-xl border-t border-white/10 px-6 py-4 space-y-2">
                     {navLinks.map((link) => {
-                        const isActive = activeSection === link.href.substring(1);
+                        const isActive = activeSection === link.href.split("#")[1];
                         return (
                             <Link
                                 key={link.name}
@@ -153,7 +164,7 @@ export default function Navigation() {
                         );
                     })}
                     <Link
-                        href="#contact"
+                        href="/#contact"
                         onClick={() => setIsMobileMenuOpen(false)}
                         className="block px-4 py-3 bg-white text-black text-center font-semibold rounded-lg hover:bg-gray-200 transition-all duration-300 mt-4"
                     >

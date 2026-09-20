@@ -2,7 +2,9 @@
 
 import { getPortfolioContent } from "@/data/portfolio";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useLanguage } from "@/components/LanguageProvider";
 
@@ -10,7 +12,10 @@ type ProjectCategory = string;
 
 export default function Projects() {
     const { language } = useLanguage();
-    const { projects } = getPortfolioContent(language);
+    const { projects: allProjects } = getPortfolioContent(language);
+    // "المشاريع" section only shows personal/experimental projects.
+    // Professional client work now lives in the "Professional Work" section above.
+    const projects = allProjects.filter((project) => project.workType === "personal");
 
     const categoryMap = {
         ar: ["الكل", "تطوير", "صيانة وضمان الجودة", "Power BI وتحليل البيانات"],
@@ -22,6 +27,7 @@ export default function Projects() {
             titleBefore: "",
             titleHighlight: "المشاريع",
             viewProject: "عرض المشروع",
+            details: "التفاصيل",
             showMore: "عرض المزيد من المشاريع",
             remaining: "متبقي",
             noProjects: "لا توجد مشاريع ضمن هذا التصنيف.",
@@ -31,6 +37,7 @@ export default function Projects() {
             titleHighlight: "Projects",
             titleAfter: "",
             viewProject: "View Live Project",
+            details: "Details",
             showMore: "Show More Projects",
             remaining: "remaining",
             noProjects: "No projects found in this category.",
@@ -133,18 +140,27 @@ export default function Projects() {
                                         ))}
                                     </div>
 
-                                    {/* Link */}
-                                    {project.link && project.link !== "#" && (
-                                        <a
-                                            href={project.link}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="inline-flex items-center gap-2 text-text hover:text-text/70 transition-colors font-semibold text-lg group/link"
+                                    {/* Links */}
+                                    <div className="flex flex-wrap items-center gap-6">
+                                        {project.link && project.link !== "#" && (
+                                            <a
+                                                href={project.link}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="inline-flex items-center gap-2 text-text hover:text-text/70 transition-colors font-semibold text-lg group/link"
+                                            >
+                                                <span>{copy.viewProject}</span>
+                                                <FaExternalLinkAlt className="text-base group-hover/link:translate-x-1 transition-transform" />
+                                            </a>
+                                        )}
+                                        <Link
+                                            href={`/projects/${project.slug}`}
+                                            className="group/details inline-flex items-center gap-2 px-5 py-2.5 bg-white text-black rounded-lg font-semibold hover:bg-gray-200 transition-all duration-300 hover:shadow-lg hover:shadow-white/20"
                                         >
-                                            <span>{copy.viewProject}</span>
-                                            <FaExternalLinkAlt className="text-base group-hover/link:translate-x-1 transition-transform" />
-                                        </a>
-                                    )}
+                                            {copy.details}
+                                            <ArrowRight className="w-4 h-4 group-hover/details:translate-x-1 transition-transform" />
+                                        </Link>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -3,6 +3,7 @@ import AnimatedBackground from "@/components/AnimatedBackground";
 import Hero from "@/components/Hero";
 import Skills from "@/components/Skills";
 import TechStack from "@/components/TechStack";
+import ProfessionalWork from "@/components/ProfessionalWork";
 import Projects from "@/components/Projects";
 import Education from "@/components/Education";
 import Contact from "@/components/Contact";
@@ -15,6 +16,7 @@ export default function Home() {
             <Hero />
             <Skills />
             <TechStack />
+            <ProfessionalWork />
             <Projects />
             <Education />
             <Contact />
