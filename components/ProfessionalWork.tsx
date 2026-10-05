@@ -15,7 +15,7 @@ export default function ProfessionalWork() {
     const copy = {
         ar: {
             titleBefore: "",
-            titleHighlight: "أعمالي مع العملاء",
+            titleHighlight: "أعمالي المهنية",
             titleAfter: "",
             viewProject: "عرض المشروع",
             details: "التفاصيل",
