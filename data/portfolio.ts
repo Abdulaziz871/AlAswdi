@@ -243,6 +243,24 @@ export const portfolioData: Record<Language, PortfolioContent> = {
     ],
     projects: [
       {
+        slug: "amad",
+        title: "منظومة امد",
+        description:
+          "طورت موقع منظومة امد للابتكار وريادة الأعمال — مبادرة يقودها مصرف الإنماء بالشراكة مع شركة فلك لتمكين رواد الأعمال في قطاع التقنية المالية. موقع ثنائي اللغة (عربي/إنجليزي) يدعم الوضع الليلي ويعرض المبادرات والرحلة والخريجين والأسئلة الشائعة.",
+        technologies: ["Next.js", "متعدد اللغات", "تصميم UI/UX"],
+        link: "https://amad-eco.vercel.app/ar",
+        github: "",
+        image: "/images/projects/amad.png",
+        category: "تطوير",
+        workType: "professional",
+        client: "فلك بالشراكة مع مصرف الإنماء",
+        duration: "2026",
+        role: "مطور",
+        timeline: buildTimelineAr,
+        techDetails: { languages: ["TypeScript"], frameworks: ["Next.js"], database: [], styling: ["Tailwind CSS"], tools: ["متعدد اللغات", "تصميم UI/UX"], techniques: ["تصميم متجاوب","دعم RTL/LTR","الوضع الليلي"], typography: "IBM Plex Sans Arabic", loadTime: "110ms", mobileReady: true, colors: ["#0F2340","#C8704F","#FBF6F3"], toolsAndSkills: ["GitHub","Vercel","Figma"] },
+        gallery: [{ image: "/images/projects/amad.png", caption: "معاينة الصفحة الرئيسية" }],
+      },
+      {
         slug: "swing",
         title: "Swing",
         description:
@@ -618,6 +636,24 @@ export const portfolioData: Record<Language, PortfolioContent> = {
       },
     ],
     projects: [
+      {
+        slug: "amad",
+        title: "Amad Ecosystem",
+        description:
+          "Built the website for Amad, an innovation & entrepreneurship ecosystem led by Alinma Bank in partnership with Falak to empower fintech founders. A bilingual (Arabic/English) site with dark mode, showcasing the initiatives, journey, alumni, and FAQs.",
+        technologies: ["Next.js", "Multilingual", "UI/UX Design"],
+        link: "https://amad-eco.vercel.app/ar",
+        github: "",
+        image: "/images/projects/amad.png",
+        category: "Development",
+        workType: "professional",
+        client: "Falak in partnership with Alinma Bank",
+        duration: "2026",
+        role: "Developer",
+        timeline: buildTimelineEn,
+        techDetails: { languages: ["TypeScript"], frameworks: ["Next.js"], database: [], styling: ["Tailwind CSS"], tools: ["Multilingual", "UI/UX Design"], techniques: ["Responsive Design","RTL/LTR Support","Dark Mode"], typography: "IBM Plex Sans Arabic", loadTime: "110ms", mobileReady: true, colors: ["#0F2340","#C8704F","#FBF6F3"], toolsAndSkills: ["GitHub","Vercel","Figma"] },
+        gallery: [{ image: "/images/projects/amad.png", caption: "Homepage preview" }],
+      },
       {
         slug: "swing",
         title: "Swing",
