@@ -1,7 +1,7 @@
 "use client";
 
 import { getPortfolioContent } from "@/data/portfolio";
-import { FaEnvelope, FaPhone, FaGithub, FaLinkedin, FaTwitter, FaGlobe } from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaLinkedin, FaGlobe } from "react-icons/fa";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/components/LanguageProvider";
@@ -30,6 +30,8 @@ export default function Contact() {
             sending: "جارٍ الإرسال...",
             send: "إرسال الرسالة",
             success: "تم إرسال الرسالة بنجاح!",
+            error: "تعذّر إرسال الرسالة، حاول مرة أخرى أو راسلني على البريد مباشرة.",
+            subject: "رسالة جديدة من موقعك الشخصي",
             rights: "© 2026 عبدالعزيز الأسودي. جميع الحقوق محفوظة.",
         },
         en: {
@@ -51,6 +53,8 @@ export default function Contact() {
             sending: "Sending...",
             send: "Send Message",
             success: "Message sent successfully!",
+            error: "Couldn't send your message. Please try again or email me directly.",
+            subject: "New message from your portfolio",
             rights: "© 2026 Abdulaziz AlAswdi. All rights reserved.",
         },
     }[language];
@@ -68,15 +72,31 @@ export default function Contact() {
         e.preventDefault();
         setIsSubmitting(true);
 
-        // Simulate form submission
-        setTimeout(() => {
-            setSubmitStatus("success");
-            setIsSubmitting(false);
-            setFormData({ name: "", email: "", message: "" });
+        setSubmitStatus("idle");
 
-            // Reset status after 3 seconds
-            setTimeout(() => setSubmitStatus("idle"), 3000);
-        }, 1000);
+        try {
+            const res = await fetch(`https://formsubmit.co/ajax/${contact.email}`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json", Accept: "application/json" },
+                body: JSON.stringify({
+                    ...formData,
+                    _replyto: formData.email,
+                    _subject: `${copy.subject} — ${formData.name}`,
+                    _template: "table",
+                    _captcha: "false",
+                }),
+            });
+            const data = await res.json().catch(() => null);
+            if (!res.ok || String(data?.success) !== "true") throw new Error("Send failed");
+
+            setSubmitStatus("success");
+            setFormData({ name: "", email: "", message: "" });
+            setTimeout(() => setSubmitStatus("idle"), 5000);
+        } catch {
+            setSubmitStatus("error");
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -158,25 +178,13 @@ export default function Contact() {
                                 <h4 className="text-xl font-semibold mb-4">{copy.connect}</h4>
                                 <div className="flex gap-4">
                                     <a
-                                        href="#"
-                                        className="bg-hover hover:bg-white/20 p-4 rounded-lg transition-all hover:scale-110"
-                                        aria-label="GitHub"
-                                    >
-                                        <FaGithub className="text-3xl text-text" />
-                                    </a>
-                                    <a
-                                        href="#"
+                                        href="https://www.linkedin.com/in/abdulaziz-alaswdi-06659a244/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                         className="bg-hover hover:bg-white/20 p-4 rounded-lg transition-all hover:scale-110"
                                         aria-label="LinkedIn"
                                     >
                                         <FaLinkedin className="text-3xl text-text" />
-                                    </a>
-                                    <a
-                                        href="#"
-                                        className="bg-hover hover:bg-white/20 p-4 rounded-lg transition-all hover:scale-110"
-                                        aria-label="Twitter"
-                                    >
-                                        <FaTwitter className="text-3xl text-text" />
                                     </a>
                                 </div>
                             </div>
@@ -251,6 +259,16 @@ export default function Contact() {
                                         className="text-green-400 text-center"
                                     >
                                         {copy.success}
+                                    </motion.p>
+                                )}
+
+                                {submitStatus === "error" && (
+                                    <motion.p
+                                        initial={{ opacity: 0, y: -10 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        className="text-red-400 text-center"
+                                    >
+                                        {copy.error}
                                     </motion.p>
                                 )}
                             </form>
