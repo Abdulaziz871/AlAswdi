@@ -20,9 +20,9 @@ export default function Navigation() {
             skills: "المهارات",
             projects: "المشاريع",
             education: "التعليم",
-            contact: "التواصل",
-            talk: "لنتحدث",
-            toggleMenu: "تبديل القائمة",
+            contact: "تواصل",
+            talk: "تواصل معي",
+            toggleMenu: "القائمة",
             switchLanguage: "EN",
         },
         en: {

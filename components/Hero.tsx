@@ -28,14 +28,14 @@ export default function Hero() {
 
     const copy = {
         ar: {
-            intro: "مرحبـــاً، أنا",
-            yearsExperience: "سنوات من",
-            experience: "الخبــرة",
+            intro: "أهلًا، أنا",
+            yearsExperience: "سنوات",
+            experience: "خبرة",
             yearsAge: "مشروع",
             age: "",
             contact: "تواصل معي",
-            projects: "عرض المشاريع",
-            resume: "تحميل السيرة الذاتية",
+            projects: "شاهد أعمالي",
+            resume: "حمّل سيرتي الذاتية",
         },
         en: {
             intro: "Hi, I'm",

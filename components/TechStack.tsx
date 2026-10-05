@@ -10,21 +10,21 @@ import { useLanguage } from "@/components/LanguageProvider";
 
 const techStackByLanguage = {
     ar: [
-        { name: "Git", icon: FaGitAlt, category: "التحكم بالإصدارات", size: "medium" },
-        { name: "GitHub", icon: FaGithub, category: "التحكم بالإصدارات", size: "large" },
+        { name: "Git", icon: FaGitAlt, category: "إدارة الإصدارات", size: "medium" },
+        { name: "GitHub", icon: FaGithub, category: "إدارة الإصدارات", size: "large" },
         { name: "VS Code", icon: FaCode, category: "أدوات التطوير", size: "medium" },
         { name: "Figma", icon: FaFigma, category: "أدوات التصميم", size: "small" },
-        { name: "Vercel", icon: SiVercel, category: "النشر", size: "large" },
+        { name: "Vercel", icon: SiVercel, category: "الاستضافة والنشر", size: "large" },
         { name: "Sketch AI", icon: BiCodeAlt, category: "أدوات الذكاء الاصطناعي", size: "medium" },
         { name: "Gemini", icon: SiGooglegemini, category: "أدوات الذكاء الاصطناعي", size: "medium" },
         { name: "OpenAI", icon: SiOpenai, category: "أدوات الذكاء الاصطناعي", size: "large" },
-        { name: "Render", icon: SiRender, category: "النشر", size: "medium" },
+        { name: "Render", icon: SiRender, category: "الاستضافة والنشر", size: "medium" },
         { name: "Cursor", icon: BiCodeAlt, category: "أدوات التطوير", size: "medium" },
         { name: "HuggingFace", icon: BiCodeAlt, category: "أدوات الذكاء الاصطناعي", size: "medium" },
-        { name: "RESTful API", icon: BiCodeAlt, category: "الواجهة الخلفية", size: "large" },
+        { name: "RESTful API", icon: BiCodeAlt, category: "البرمجة الخلفية", size: "large" },
         { name: "MongoDB", icon: SiMongodb, category: "قواعد البيانات", size: "small" },
         { name: "LLM", icon: BiCodeAlt, category: "أدوات الذكاء الاصطناعي", size: "small" },
-        { name: "Agile", icon: BiCodeAlt, category: "المنهجية", size: "medium" },
+        { name: "Agile", icon: BiCodeAlt, category: "منهجية العمل", size: "medium" },
         { name: "Antigravity", icon: BiCodeAlt, category: "الأدوات", size: "medium" },
     ],
     en: [
@@ -59,7 +59,7 @@ export default function TechStack() {
                 </h2>
                 <p className="text-center text-text/70 mb-12 text-lg wow animate__fadeInUp">
                     {language === "ar"
-                        ? "التقنيات والأدوات التي أستخدمها لتحويل الأفكار إلى واقع"
+                        ? "الأدوات والتقنيات التي أعتمد عليها في عملي"
                         : "Technologies and tools I use to bring ideas to life"}
                 </p>
 

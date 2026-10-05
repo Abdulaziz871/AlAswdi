@@ -64,7 +64,7 @@ export default function ProjectDetailClient({ slug }: ProjectDetailClientProps) 
   const copy = {
     ar: {
       back: "العودة إلى المشاريع",
-      timeline: "الجدول الزمني للمشروع",
+      timeline: "مراحل المشروع",
       techStack: "التقنيات المستخدمة",
       gallery: "صور المشروع",
       github: "عرض على GitHub",
@@ -73,9 +73,9 @@ export default function ProjectDetailClient({ slug }: ProjectDetailClientProps) 
       languages: "لغات البرمجة",
       frameworks: "الأطر والمنصات",
       database: "قواعد البيانات",
-      styling: "التصميم",
-      tools: "مجالات التركيز",
-      techniques: "التقنيات والأساليب",
+      styling: "التنسيق",
+      tools: "المجالات",
+      techniques: "الأساليب",
       typography: "الخط المستخدم",
       speed: "سرعة التحميل",
       mobileReady: "متوافق مع الجوال",

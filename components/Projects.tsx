@@ -18,7 +18,7 @@ export default function Projects() {
     const projects = allProjects.filter((project) => project.workType === "personal");
 
     const categoryMap = {
-        ar: ["الكل", "تطوير", "صيانة وضمان الجودة", "Power BI وتحليل البيانات"],
+        ar: ["الكل", "تطوير", "اختبار وضمان الجودة", "Power BI وتحليل البيانات"],
         en: ["All", "Development", "Maintenance and QA", "Power BI & Data Analytics"],
     };
 
@@ -28,9 +28,9 @@ export default function Projects() {
             titleHighlight: "المشاريع",
             viewProject: "عرض المشروع",
             details: "التفاصيل",
-            showMore: "عرض المزيد من المشاريع",
-            remaining: "متبقي",
-            noProjects: "لا توجد مشاريع ضمن هذا التصنيف.",
+            showMore: "عرض المزيد",
+            remaining: "",
+            noProjects: "لا توجد مشاريع في هذا التصنيف.",
         },
         en: {
             titleBefore: "Featured ",
@@ -174,7 +174,7 @@ export default function Projects() {
                             onClick={showMore}
                             className="btn-primary px-12 py-4 text-lg"
                         >
-                            {copy.showMore} ({filteredProjects.length - visibleCount} {copy.remaining})
+                            {copy.showMore} ({filteredProjects.length - visibleCount}{copy.remaining && ` ${copy.remaining}`})
                         </button>
                     </div>
                 )}
