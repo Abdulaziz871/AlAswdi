@@ -18,8 +18,21 @@ export async function generateMetadata({
   if (!project) return {};
 
   return {
-    title: `${project.title} | Abdulaziz AlAswdi`,
+    title: project.title,
     description: project.description,
+    alternates: { canonical: `/projects/${project.slug}` },
+    openGraph: {
+      title: `${project.title} | Abdulaziz AlAswdi`,
+      description: project.description,
+      url: `/projects/${project.slug}`,
+      images: [{ url: project.image, alt: project.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.title} | Abdulaziz AlAswdi`,
+      description: project.description,
+      images: [project.image],
+    },
   };
 }
 
