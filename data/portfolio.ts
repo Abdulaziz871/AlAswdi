@@ -279,6 +279,21 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         gallery: [{ image: "/images/projects/swing.png", caption: "معاينة الصفحة الرئيسية" }],
       },
       {
+        slug: "docuflow-ai",
+        title: "DocuFlow AI",
+        description:
+          "منصة لأتمتة المستندات بالذكاء الاصطناعي؛ ترفع الفاتورة أو المستند فيقرأ النظام بياناته ويصنّفه تلقائيًا، ثم يمر على قواعد عمل تحددها أنت، مع لوحة لمتابعة حالة كل مستند وإدارة المستخدمين ومفاتيح API.",
+        technologies: ["Next.js", "ذكاء اصطناعي", "أتمتة المستندات"],
+        link: "https://docu-flow-omega.vercel.app/",
+        github: "",
+        image: "/images/projects/docu.png",
+        category: "تطوير",
+        workType: "personal",
+        timeline: buildTimelineAr,
+        techDetails: { languages: ["TypeScript"], frameworks: ["Next.js"], database: [], styling: ["Tailwind CSS"], tools: ["ذكاء اصطناعي", "أتمتة المستندات"], techniques: ["استخراج البيانات من المستندات","قواعد عمل قابلة للتخصيص","صلاحيات المستخدمين"], typography: "IBM Plex Sans Arabic", loadTime: "120ms", mobileReady: true, colors: ["#5B5BF0","#0F172A","#F8FAFC"], toolsAndSkills: ["GitHub","Vercel","VS Code"] },
+        gallery: [{ image: "/images/projects/docu.png", caption: "لوحة المتابعة" }],
+      },
+      {
         slug: "idea-vault",
         title: "Idea Vault",
         description:
@@ -674,6 +689,21 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         timeline: buildTimelineEn,
         techDetails: { languages: [], frameworks: ["Webflow"], database: [], styling: ["Webflow CMS"], tools: ["UI/UX Design"], techniques: ["Responsive Design","CMS Content Modeling"], typography: "Jali Arabic, Tahoma, sans-serif", loadTime: "120ms", mobileReady: true, colors: ["#FFC440","#222222","#161616"], toolsAndSkills: ["Webflow","Figma"] },
         gallery: [{ image: "/images/projects/swing.png", caption: "Homepage preview" }],
+      },
+      {
+        slug: "docuflow-ai",
+        title: "DocuFlow AI",
+        description:
+          "An AI-powered document automation platform: upload an invoice or document and it extracts and classifies the data automatically, runs it through your own business rules, and tracks every document's status in a dashboard with user and API key management.",
+        technologies: ["Next.js", "AI", "Document Automation"],
+        link: "https://docu-flow-omega.vercel.app/",
+        github: "",
+        image: "/images/projects/docu.png",
+        category: "Development",
+        workType: "personal",
+        timeline: buildTimelineEn,
+        techDetails: { languages: ["TypeScript"], frameworks: ["Next.js"], database: [], styling: ["Tailwind CSS"], tools: ["AI", "Document Automation"], techniques: ["Document Data Extraction","Configurable Business Rules","Role-Based Access"], typography: "IBM Plex Sans Arabic", loadTime: "120ms", mobileReady: true, colors: ["#5B5BF0","#0F172A","#F8FAFC"], toolsAndSkills: ["GitHub","Vercel","VS Code"] },
+        gallery: [{ image: "/images/projects/docu.png", caption: "Dashboard" }],
       },
       {
         slug: "idea-vault",
