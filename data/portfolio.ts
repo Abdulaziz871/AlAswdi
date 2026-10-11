@@ -363,21 +363,6 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         gallery: [{ image: "/images/projects/alaswdi.png", caption: "معاينة الصفحة الرئيسية" }],
       },
       {
-        slug: "islamhouse-services",
-        title: "خدمات دار الإسلام",
-        description:
-          "صفحة تجمع خدمات دار الإسلام في مكان واحد بشكل مرتب وسهل الوصول؛ أدخلت فيها أكثر من 500 خدمة بعدة لغات، وطوّرت لها لوحة تحكم خاصة.",
-        technologies: ["متعدد اللغات", "CMS", "برمجة خلفية"],
-        link: "#",
-        github: "",
-        image: "/images/projects/islamhouse.png",
-        category: "تطوير",
-        workType: "personal",
-        timeline: buildTimelineAr,
-        techDetails: { languages: ["PHP"], frameworks: [], database: ["MySQL"], styling: [], tools: ["متعدد اللغات", "CMS", "برمجة خلفية"], techniques: ["إدارة محتوى متعدد اللغات","RESTful API"], typography: "Tajawal", loadTime: "120ms", mobileReady: true, colors: ["#1B3B6F","#F7F8FA","#C9A15A"], toolsAndSkills: ["phpMyAdmin","Excel"] },
-        gallery: [{ image: "/images/projects/islamhouse.png", caption: "معاينة الصفحة الرئيسية" }],
-      },
-      {
         slug: "headline-landing",
         title: "HeadLine",
         description:
@@ -477,21 +462,6 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         gallery: [{ image: "/images/projects/athkar.png", caption: "معاينة الصفحة الرئيسية" }],
       },
       {
-        slug: "volunteer-portal",
-        title: "بوابة التطوع",
-        description:
-          "بوابة لاستقبال المتطوعين في دار الإسلام، صممتها ونفّذتها بنموذج تسجيل سهل وواضح.",
-        technologies: ["تطوير ويب", "قواعد البيانات", "نماذج"],
-        link: "#",
-        github: "",
-        image: "/images/projects/volunteer.png",
-        category: "تطوير",
-        workType: "personal",
-        timeline: buildTimelineAr,
-        techDetails: { languages: ["PHP"], frameworks: [], database: ["MySQL"], styling: [], tools: ["تطوير ويب", "نماذج"], techniques: ["التحقق من صحة النماذج","RESTful API"], typography: "Tajawal", loadTime: "140ms", mobileReady: true, colors: ["#3FAEDD","#D9BE8F","#5A3A1E"], toolsAndSkills: ["phpMyAdmin","Figma"] },
-        gallery: [{ image: "/images/projects/volunteer.png", caption: "معاينة الصفحة الرئيسية" }],
-      },
-      {
         slug: "fatawapedia-dashboard",
         title: "لوحة بيانات فتاوى بيديا",
         description:
@@ -560,6 +530,12 @@ export const portfolioData: Record<Language, PortfolioContent> = {
       location: "ماليزيا",
     },
     certifications: [
+      {
+        name: "شهادة Google الاحترافية في الذكاء الاصطناعي",
+        issuer: "Google",
+        year: "2026",
+        icon: "FaGoogle",
+      },
       {
         name: "محلل بيانات Microsoft Power BI",
         issuer: "Microsoft",
@@ -775,21 +751,6 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         gallery: [{ image: "/images/projects/alaswdi.png", caption: "Homepage preview" }],
       },
       {
-        slug: "islamhouse-services",
-        title: "IslamHouse Services",
-        description:
-          "Created a dedicated services page, added over 500 multilingual entries, and built a custom control panel.",
-        technologies: ["Multilingual", "CMS", "Backend Development"],
-        link: "#",
-        github: "",
-        image: "/images/projects/islamhouse.png",
-        category: "Development",
-        workType: "personal",
-        timeline: buildTimelineEn,
-        techDetails: { languages: ["PHP"], frameworks: [], database: ["MySQL"], styling: [], tools: ["Multilingual", "CMS", "Backend Development"], techniques: ["Multilingual Content Management","RESTful API"], typography: "Tajawal", loadTime: "120ms", mobileReady: true, colors: ["#1B3B6F","#F7F8FA","#C9A15A"], toolsAndSkills: ["phpMyAdmin","Excel"] },
-        gallery: [{ image: "/images/projects/islamhouse.png", caption: "Homepage preview" }],
-      },
-      {
         slug: "headline-landing",
         title: "HeadLine Landing Page",
         description:
@@ -889,21 +850,6 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         gallery: [{ image: "/images/projects/athkar.png", caption: "Homepage preview" }],
       },
       {
-        slug: "volunteer-portal",
-        title: "Volunteer Portal",
-        description:
-          "Developed a dedicated portal to collect volunteers through the Dar Al-Islam website. Designed and implemented an easy-to-use interface for registration and participation.",
-        technologies: ["Web Development", "Database", "Forms"],
-        link: "#",
-        github: "",
-        image: "/images/projects/volunteer.png",
-        category: "Development",
-        workType: "personal",
-        timeline: buildTimelineEn,
-        techDetails: { languages: ["PHP"], frameworks: [], database: ["MySQL"], styling: [], tools: ["Web Development", "Forms"], techniques: ["Form Validation","RESTful API"], typography: "Tajawal", loadTime: "140ms", mobileReady: true, colors: ["#3FAEDD","#D9BE8F","#5A3A1E"], toolsAndSkills: ["phpMyAdmin","Figma"] },
-        gallery: [{ image: "/images/projects/volunteer.png", caption: "Homepage preview" }],
-      },
-      {
         slug: "fatawapedia-dashboard",
         title: "FatawaPedia Dashboard",
         description:
@@ -972,6 +918,12 @@ export const portfolioData: Record<Language, PortfolioContent> = {
       location: "Malaysia",
     },
     certifications: [
+      {
+        name: "Google AI Professional Certificate",
+        issuer: "Google",
+        year: "2026",
+        icon: "FaGoogle",
+      },
       {
         name: "Microsoft Power BI Data Analyst",
         issuer: "Microsoft",

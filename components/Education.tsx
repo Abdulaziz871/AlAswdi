@@ -1,12 +1,13 @@
 "use client";
 
 import { getPortfolioContent } from "@/data/portfolio";
-import { FaGraduationCap, FaCertificate, FaChartBar, FaDatabase } from "react-icons/fa";
+import { FaGraduationCap, FaCertificate, FaChartBar, FaDatabase, FaGoogle } from "react-icons/fa";
 import { useLanguage } from "@/components/LanguageProvider";
 
 const certIconMap: { [key: string]: any } = {
     SiPowerbi: FaChartBar,
     SiPowerautomate: FaDatabase,
+    FaGoogle,
 };
 
 export default function Education() {
