@@ -7,7 +7,7 @@ import SmoothScroll from "@/components/SmoothScroll";
 
 const siteName = "Abdulaziz AlAswdi | عبدالعزيز الأسودي";
 const description =
-    "عبدالعزيز الأسودي — مطور ويب ومصمم بخبرة +4 سنوات في تطوير الواجهات الأمامية والخلفية وتحليل البيانات. Abdulaziz AlAswdi — Web developer & designer building full-stack web apps, AI-powered tools, and Power BI dashboards.";
+    "مهندس برمجيات شغوف بالذكاء الاصطناعي وتحليل البيانات؛ أبني مواقع وتطبيقات ويب متكاملة وحلولًا ذكية، وأحوّل الأرقام إلى قرارات. Software engineer passionate about AI and data analytics, building full-stack web apps and smart solutions, and turning numbers into decisions.";
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://alaswdi.vercel.app"),
