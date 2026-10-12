@@ -258,7 +258,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         role: "مطور",
         timeline: buildTimelineAr,
         techDetails: { languages: ["TypeScript"], frameworks: ["Next.js"], database: [], styling: ["Tailwind CSS"], tools: ["متعدد اللغات", "تصميم UI/UX"], techniques: ["تصميم متجاوب","دعم RTL/LTR","الوضع الليلي"], typography: "IBM Plex Sans Arabic", loadTime: "110ms", mobileReady: true, colors: ["#0F2340","#C8704F","#FBF6F3"], toolsAndSkills: ["GitHub","Vercel","Figma"] },
-        gallery: [{ image: "/images/projects/amad.png", caption: "معاينة الصفحة الرئيسية" }],
+        gallery: [{ image: "/images/projects/amad.png", caption: "معاينة الصفحة الرئيسية" }, { image: "/images/projects/gallery/amad-2.webp", caption: "المبادرات" }, { image: "/images/projects/gallery/amad-3.webp", caption: "رحلة المبادرة" }, { image: "/images/projects/gallery/amad-4.webp", caption: "الشركاء" }, { image: "/images/projects/gallery/amad-5.webp", caption: "نسخة الجوال" }],
       },
       {
         slug: "swing",
@@ -276,7 +276,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         role: "مطور",
         timeline: buildTimelineAr,
         techDetails: { languages: [], frameworks: ["Webflow"], database: [], styling: ["Webflow CMS"], tools: ["تصميم UI/UX"], techniques: ["تصميم متجاوب","إدارة المحتوى عبر CMS"], typography: "Jali Arabic, Tahoma, sans-serif", loadTime: "120ms", mobileReady: true, colors: ["#FFC440","#222222","#161616"], toolsAndSkills: ["Webflow","Figma"] },
-        gallery: [{ image: "/images/projects/swing.png", caption: "معاينة الصفحة الرئيسية" }],
+        gallery: [{ image: "/images/projects/swing.png", caption: "معاينة الصفحة الرئيسية" }, { image: "/images/projects/gallery/swing-2.webp", caption: "من أعمال الوكالة" }, { image: "/images/projects/gallery/swing-3.webp", caption: "عرض المشاريع" }, { image: "/images/projects/gallery/swing-4.webp", caption: "الأعمال الحائزة على جوائز" }, { image: "/images/projects/gallery/swing-5.webp", caption: "نسخة الجوال" }],
       },
       {
         slug: "docuflow-ai",
@@ -291,7 +291,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         workType: "personal",
         timeline: buildTimelineAr,
         techDetails: { languages: ["TypeScript"], frameworks: ["Next.js"], database: [], styling: ["Tailwind CSS"], tools: ["ذكاء اصطناعي", "أتمتة المستندات"], techniques: ["استخراج البيانات من المستندات","قواعد عمل قابلة للتخصيص","صلاحيات المستخدمين"], typography: "IBM Plex Sans Arabic", loadTime: "120ms", mobileReady: true, colors: ["#5B5BF0","#0F172A","#F8FAFC"], toolsAndSkills: ["GitHub","Vercel","VS Code"] },
-        gallery: [{ image: "/images/projects/docu.png", caption: "لوحة المتابعة" }],
+        gallery: [{ image: "/images/projects/docu.png", caption: "لوحة المتابعة" }, { image: "/images/projects/gallery/docuflow-ai-2.webp", caption: "صفحة تسجيل الدخول" }, { image: "/images/projects/gallery/docuflow-ai-3.webp", caption: "نسخة الجوال" }],
       },
       {
         slug: "idea-vault",
@@ -306,7 +306,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         workType: "personal",
         timeline: buildTimelineAr,
         techDetails: { languages: ["TypeScript","JavaScript"], frameworks: ["React","Vite","Tailwind CSS"], database: [], styling: ["Tailwind CSS","shadcn/ui"], tools: ["ذكاء اصطناعي", "Full Stack", "تصميم UI/UX"], techniques: ["RAG","تلخيص تلقائي بالذكاء الاصطناعي"], typography: "ui-sans-serif, system-ui, sans-serif", loadTime: "95ms", mobileReady: true, colors: ["#4F46E5","#F8FAFC","#111827"], toolsAndSkills: ["GitHub","Vercel","VS Code"] },
-        gallery: [{ image: "/images/projects/idea.png", caption: "معاينة الصفحة الرئيسية" }],
+        gallery: [{ image: "/images/projects/idea.png", caption: "معاينة الصفحة الرئيسية" }, { image: "/images/projects/gallery/idea-vault-2.webp", caption: "شاشة الترحيب" }, { image: "/images/projects/gallery/idea-vault-3.webp", caption: "نسخة الجوال" }],
       },
       {
         slug: "sunnah-hadith-search",
@@ -324,7 +324,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         role: "مطور",
         timeline: buildTimelineAr,
         techDetails: { languages: ["TypeScript"], frameworks: ["Next.js"], database: [], styling: [], tools: ["RAG", "محرك بحث"], techniques: ["RAG","بحث دلالي"], typography: "Noto Sans Arabic", loadTime: "140ms", mobileReady: true, colors: ["#2F8FBF","#F6F4F0","#1A1A1A"], toolsAndSkills: ["GitHub","Vercel","VS Code"] },
-        gallery: [{ image: "/images/projects/hadith.png", caption: "معاينة الصفحة الرئيسية" }],
+        gallery: [{ image: "/images/projects/hadith.png", caption: "معاينة الصفحة الرئيسية" }, { image: "/images/projects/gallery/sunnah-hadith-search-2.webp", caption: "صفحة تسجيل الدخول" }, { image: "/images/projects/gallery/sunnah-hadith-search-3.webp", caption: "نسخة الجوال" }],
       },
       {
         slug: "qomra-store",
@@ -342,7 +342,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         role: "مختبر جودة",
         timeline: qaTimelineAr,
         techDetails: { languages: [], frameworks: ["Salla"], database: [], styling: [], tools: ["تجارة إلكترونية", "إدارة البيانات", "UI/UX"], techniques: ["اختبار الجودة اليدوي","إدخال بيانات المنتجات"], typography: "Tajawal", loadTime: "80ms", mobileReady: true, colors: ["#B02333","#181A1B","#F2F2F2"], toolsAndSkills: ["Salla Dashboard","Excel"] },
-        gallery: [{ image: "/images/projects/qomrah.png", caption: "معاينة الصفحة الرئيسية" }],
+        gallery: [{ image: "/images/projects/qomrah.png", caption: "معاينة الصفحة الرئيسية" }, { image: "/images/projects/gallery/qomra-store-2.webp", caption: "قسم العدسات السينمائية" }, { image: "/images/projects/gallery/qomra-store-3.webp", caption: "منتجات التصوير الكلاسيكي" }, { image: "/images/projects/gallery/qomra-store-4.webp", caption: "معدات الإضاءة" }],
       },
       {
         slug: "alaswadi-art",
@@ -378,7 +378,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         role: "مصمم واجهات",
         timeline: buildTimelineAr,
         techDetails: { languages: ["HTML", "CSS"], frameworks: [], database: [], styling: ["Custom CSS","تصميم متجاوب"], tools: ["تصميم متجاوب"], techniques: ["تصميم متجاوب","اختبار متعدد المتصفحات"], typography: "Noto Sans Arabic", loadTime: "95ms", mobileReady: true, colors: ["#0D1117","#F0654A","#7EC8E3"], toolsAndSkills: ["VS Code","Figma"] },
-        gallery: [{ image: "/images/projects/headline.png", caption: "معاينة الصفحة الرئيسية" }],
+        gallery: [{ image: "/images/projects/headline.png", caption: "معاينة الصفحة الرئيسية" }, { image: "/images/projects/gallery/headline-landing-2.webp", caption: "من هيدلاين" }, { image: "/images/projects/gallery/headline-landing-3.webp", caption: "الخدمات" }, { image: "/images/projects/gallery/headline-landing-4.webp", caption: "قسم التواصل" }],
       },
       {
         slug: "alsunna-center",
@@ -396,7 +396,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         role: "مختبر جودة",
         timeline: qaTimelineAr,
         techDetails: { languages: [], frameworks: [], database: [], styling: [], tools: ["Full Stack", "اختبار الجودة", "توثيق"], techniques: ["اختبار الجودة اليدوي","توثيق المحتوى"], typography: "DIN Next", loadTime: "140ms", mobileReady: true, colors: ["#1F3B44","#EDEDED","#C9A15A"], toolsAndSkills: ["Browser DevTools","Notion"] },
-        gallery: [{ image: "/images/projects/alssuna.png", caption: "معاينة الصفحة الرئيسية" }],
+        gallery: [{ image: "/images/projects/alssuna.png", caption: "معاينة الصفحة الرئيسية" }, { image: "/images/projects/gallery/alsunna-center-2.webp", caption: "الأحاديث الجديدة والأكثر مشاهدة" }, { image: "/images/projects/gallery/alsunna-center-3.webp", caption: "تذييل الموقع والقائمة البريدية" }, { image: "/images/projects/gallery/alsunna-center-4.webp", caption: "نسخة الجوال" }],
       },
       {
         slug: "fatawapedia",
@@ -414,7 +414,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         role: "مختبر جودة",
         timeline: qaTimelineAr,
         techDetails: { languages: [], frameworks: [], database: [], styling: [], tools: ["اختبار", "ضمان الجودة", "تجربة المستخدم"], techniques: ["اختبار الجودة اليدوي","اختبار تجربة المستخدم"], typography: "Noto Sans Arabic", loadTime: "80ms", mobileReady: true, colors: ["#1E3A45","#B9C08C","#FBF8E8"], toolsAndSkills: ["Browser DevTools","Notion"] },
-        gallery: [{ image: "/images/projects/fatawa.png", caption: "معاينة الصفحة الرئيسية" }],
+        gallery: [{ image: "/images/projects/fatawa.png", caption: "معاينة الصفحة الرئيسية" }, { image: "/images/projects/gallery/fatawapedia-2.webp", caption: "فتاوى مختارة والأكثر قراءة" }, { image: "/images/projects/gallery/fatawapedia-3.webp", caption: "تصنيفات الفتاوى" }, { image: "/images/projects/gallery/fatawapedia-4.webp", caption: "أقسام الفتاوى وتذييل الموقع" }, { image: "/images/projects/gallery/fatawapedia-5.webp", caption: "نسخة الجوال" }],
       },
       {
         slug: "alarjwan-restaurant",
@@ -429,7 +429,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         workType: "personal",
         timeline: buildTimelineAr,
         techDetails: { languages: ["HTML","CSS","JavaScript"], frameworks: ["Bootstrap"], database: [], styling: ["Bootstrap"], tools: ["تطوير ويب", "تصميم متجاوب"], techniques: ["تصميم متجاوب","نشر موقع ثابت"], typography: "Baloo Bhaijaan 2", loadTime: "110ms", mobileReady: true, colors: ["#3D4F32","#4C5F3E","#F1EEE7"], toolsAndSkills: ["VS Code","GitHub"] },
-        gallery: [{ image: "/images/projects/arjwan.png", caption: "معاينة الصفحة الرئيسية" }],
+        gallery: [{ image: "/images/projects/arjwan.png", caption: "معاينة الصفحة الرئيسية" }, { image: "/images/projects/gallery/alarjwan-restaurant-2.webp", caption: "نبذة عن المطعم" }, { image: "/images/projects/gallery/alarjwan-restaurant-3.webp", caption: "ما نقدمه" }, { image: "/images/projects/gallery/alarjwan-restaurant-4.webp", caption: "أطباق مميزة" }, { image: "/images/projects/gallery/alarjwan-restaurant-5.webp", caption: "نسخة الجوال" }],
       },
       {
         slug: "servizu-logistics",
@@ -444,7 +444,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         workType: "personal",
         timeline: buildTimelineAr,
         techDetails: { languages: ["HTML","CSS","JavaScript"], frameworks: ["Bootstrap"], database: [], styling: ["Bootstrap"], tools: ["لوجستيات", "أنظمة تتبع", "تطبيقات ويب"], techniques: ["تصميم متجاوب","نشر موقع ثابت"], typography: "Baloo Bhaijaan 2", loadTime: "120ms", mobileReady: true, colors: ["#8B2E3C","#D4A94A","#FFFFFF"], toolsAndSkills: ["VS Code","GitHub"] },
-        gallery: [{ image: "/images/projects/ser.png", caption: "معاينة الصفحة الرئيسية" }],
+        gallery: [{ image: "/images/projects/ser.png", caption: "معاينة الصفحة الرئيسية" }, { image: "/images/projects/gallery/servizu-logistics-2.webp", caption: "من نحن" }, { image: "/images/projects/gallery/servizu-logistics-3.webp", caption: "فيديو تعريفي" }, { image: "/images/projects/gallery/servizu-logistics-4.webp", caption: "آخر الأخبار" }],
       },
       {
         slug: "athkar",
@@ -459,7 +459,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         workType: "personal",
         timeline: buildTimelineAr,
         techDetails: { languages: ["HTML","CSS","JavaScript"], frameworks: ["Bootstrap"], database: [], styling: ["Bootstrap"], tools: ["تطبيق ويب", "محتوى إسلامي"], techniques: ["تصميم متجاوب","نشر موقع ثابت"], typography: "Baloo Bhaijaan 2", loadTime: "95ms", mobileReady: true, colors: ["#3A4A6B","#E8EDF5","#FFFFFF"], toolsAndSkills: ["VS Code","GitHub"] },
-        gallery: [{ image: "/images/projects/athkar.png", caption: "معاينة الصفحة الرئيسية" }],
+        gallery: [{ image: "/images/projects/athkar.png", caption: "معاينة الصفحة الرئيسية" }, { image: "/images/projects/gallery/athkar-2.webp", caption: "قسم الأذكار مفتوحًا" }, { image: "/images/projects/gallery/athkar-3.webp", caption: "نسخة الجوال" }],
       },
       {
         slug: "fatawapedia-dashboard",
@@ -504,7 +504,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         workType: "personal",
         timeline: dashboardTimelineAr,
         techDetails: { languages: ["DAX","Power Query M"], frameworks: ["Power BI"], database: [], styling: [], tools: ["Power BI", "تحليل البيانات", "تصور البيانات"], techniques: ["تحليل السلاسل الزمنية","فلاتر تفاعلية"], typography: "Segoe UI", loadTime: "120ms", mobileReady: true, colors: ["#1E93EB","#1B2A6B","#7A5FC4"], toolsAndSkills: ["Power BI Desktop","Excel"] },
-        gallery: [{ image: "/images/projects/sales.png", caption: "معاينة اللوحة" }],
+        gallery: [{ image: "/images/projects/sales.png", caption: "معاينة اللوحة" }, { image: "/images/projects/gallery/sales-dashboard-2.webp", caption: "جدول المبيعات والأرباح حسب السنة" }, { image: "/images/projects/gallery/sales-dashboard-3.webp", caption: "المبيعات مقابل المستهدف" }],
       },
       {
         slug: "jobs-dashboard-01",
@@ -519,7 +519,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         workType: "personal",
         timeline: dashboardTimelineAr,
         techDetails: { languages: ["DAX","Power Query M"], frameworks: ["Power BI"], database: [], styling: [], tools: ["Power BI", "تحليل البيانات", "تصور البيانات"], techniques: ["نمذجة البيانات","تحليل مقارن"], typography: "Segoe UI", loadTime: "95ms", mobileReady: true, colors: ["#2E86DE","#D6EAF8","#333333"], toolsAndSkills: ["Power BI Desktop","Excel"] },
-        gallery: [{ image: "/images/projects/Jobs01.png", caption: "معاينة اللوحة" }],
+        gallery: [{ image: "/images/projects/Jobs01.png", caption: "معاينة اللوحة" }, { image: "/images/projects/gallery/jobs-dashboard-01-2.webp", caption: "تفاصيل وظيفة مهندس بيانات" }],
       },
     ],
     education: {
@@ -646,7 +646,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         role: "Developer",
         timeline: buildTimelineEn,
         techDetails: { languages: ["TypeScript"], frameworks: ["Next.js"], database: [], styling: ["Tailwind CSS"], tools: ["Multilingual", "UI/UX Design"], techniques: ["Responsive Design","RTL/LTR Support","Dark Mode"], typography: "IBM Plex Sans Arabic", loadTime: "110ms", mobileReady: true, colors: ["#0F2340","#C8704F","#FBF6F3"], toolsAndSkills: ["GitHub","Vercel","Figma"] },
-        gallery: [{ image: "/images/projects/amad.png", caption: "Homepage preview" }],
+        gallery: [{ image: "/images/projects/amad.png", caption: "Homepage preview" }, { image: "/images/projects/gallery/amad-2.webp", caption: "Initiatives" }, { image: "/images/projects/gallery/amad-3.webp", caption: "Program journey" }, { image: "/images/projects/gallery/amad-4.webp", caption: "Partners" }, { image: "/images/projects/gallery/amad-5.webp", caption: "Mobile view" }],
       },
       {
         slug: "swing",
@@ -664,7 +664,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         role: "Developer",
         timeline: buildTimelineEn,
         techDetails: { languages: [], frameworks: ["Webflow"], database: [], styling: ["Webflow CMS"], tools: ["UI/UX Design"], techniques: ["Responsive Design","CMS Content Modeling"], typography: "Jali Arabic, Tahoma, sans-serif", loadTime: "120ms", mobileReady: true, colors: ["#FFC440","#222222","#161616"], toolsAndSkills: ["Webflow","Figma"] },
-        gallery: [{ image: "/images/projects/swing.png", caption: "Homepage preview" }],
+        gallery: [{ image: "/images/projects/swing.png", caption: "Homepage preview" }, { image: "/images/projects/gallery/swing-2.webp", caption: "Agency showcase" }, { image: "/images/projects/gallery/swing-3.webp", caption: "Featured projects" }, { image: "/images/projects/gallery/swing-4.webp", caption: "Award-winning work" }, { image: "/images/projects/gallery/swing-5.webp", caption: "Mobile view" }],
       },
       {
         slug: "docuflow-ai",
@@ -679,7 +679,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         workType: "personal",
         timeline: buildTimelineEn,
         techDetails: { languages: ["TypeScript"], frameworks: ["Next.js"], database: [], styling: ["Tailwind CSS"], tools: ["AI", "Document Automation"], techniques: ["Document Data Extraction","Configurable Business Rules","Role-Based Access"], typography: "IBM Plex Sans Arabic", loadTime: "120ms", mobileReady: true, colors: ["#5B5BF0","#0F172A","#F8FAFC"], toolsAndSkills: ["GitHub","Vercel","VS Code"] },
-        gallery: [{ image: "/images/projects/docu.png", caption: "Dashboard" }],
+        gallery: [{ image: "/images/projects/docu.png", caption: "Dashboard" }, { image: "/images/projects/gallery/docuflow-ai-2.webp", caption: "Sign-in page" }, { image: "/images/projects/gallery/docuflow-ai-3.webp", caption: "Mobile view" }],
       },
       {
         slug: "idea-vault",
@@ -694,7 +694,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         workType: "personal",
         timeline: buildTimelineEn,
         techDetails: { languages: ["TypeScript","JavaScript"], frameworks: ["React","Vite","Tailwind CSS"], database: [], styling: ["Tailwind CSS","shadcn/ui"], tools: ["AI Integration", "Full Stack", "UI/UX Design"], techniques: ["RAG","AI-generated Summaries"], typography: "ui-sans-serif, system-ui, sans-serif", loadTime: "95ms", mobileReady: true, colors: ["#4F46E5","#F8FAFC","#111827"], toolsAndSkills: ["GitHub","Vercel","VS Code"] },
-        gallery: [{ image: "/images/projects/idea.png", caption: "Homepage preview" }],
+        gallery: [{ image: "/images/projects/idea.png", caption: "Homepage preview" }, { image: "/images/projects/gallery/idea-vault-2.webp", caption: "Welcome screen" }, { image: "/images/projects/gallery/idea-vault-3.webp", caption: "Mobile view" }],
       },
       {
         slug: "sunnah-hadith-search",
@@ -712,7 +712,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         role: "Developer",
         timeline: buildTimelineEn,
         techDetails: { languages: ["TypeScript"], frameworks: ["Next.js"], database: [], styling: [], tools: ["RAG", "Search Engine"], techniques: ["RAG","Semantic Search"], typography: "Noto Sans Arabic", loadTime: "140ms", mobileReady: true, colors: ["#2F8FBF","#F6F4F0","#1A1A1A"], toolsAndSkills: ["GitHub","Vercel","VS Code"] },
-        gallery: [{ image: "/images/projects/hadith.png", caption: "Homepage preview" }],
+        gallery: [{ image: "/images/projects/hadith.png", caption: "Homepage preview" }, { image: "/images/projects/gallery/sunnah-hadith-search-2.webp", caption: "Sign-in page" }, { image: "/images/projects/gallery/sunnah-hadith-search-3.webp", caption: "Mobile view" }],
       },
       {
         slug: "qomra-store",
@@ -730,7 +730,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         role: "QA Tester",
         timeline: qaTimelineEn,
         techDetails: { languages: [], frameworks: ["Salla"], database: [], styling: [], tools: ["E-commerce", "Data Management", "UI/UX"], techniques: ["Manual QA Testing","Product Data Entry"], typography: "Tajawal", loadTime: "80ms", mobileReady: true, colors: ["#B02333","#181A1B","#F2F2F2"], toolsAndSkills: ["Salla Dashboard","Excel"] },
-        gallery: [{ image: "/images/projects/qomrah.png", caption: "Homepage preview" }],
+        gallery: [{ image: "/images/projects/qomrah.png", caption: "Homepage preview" }, { image: "/images/projects/gallery/qomra-store-2.webp", caption: "Cinema lenses section" }, { image: "/images/projects/gallery/qomra-store-3.webp", caption: "Classic photography products" }, { image: "/images/projects/gallery/qomra-store-4.webp", caption: "Lighting gear" }],
       },
       {
         slug: "alaswadi-art",
@@ -766,7 +766,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         role: "UI Designer",
         timeline: buildTimelineEn,
         techDetails: { languages: ["HTML", "CSS"], frameworks: [], database: [], styling: ["Custom CSS","Responsive Design"], tools: ["Responsive Design"], techniques: ["Responsive Design","Cross-browser Testing"], typography: "Noto Sans Arabic", loadTime: "95ms", mobileReady: true, colors: ["#0D1117","#F0654A","#7EC8E3"], toolsAndSkills: ["VS Code","Figma"] },
-        gallery: [{ image: "/images/projects/headline.png", caption: "Homepage preview" }],
+        gallery: [{ image: "/images/projects/headline.png", caption: "Homepage preview" }, { image: "/images/projects/gallery/headline-landing-2.webp", caption: "About HeadLine" }, { image: "/images/projects/gallery/headline-landing-3.webp", caption: "Services" }, { image: "/images/projects/gallery/headline-landing-4.webp", caption: "Contact section" }],
       },
       {
         slug: "alsunna-center",
@@ -784,7 +784,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         role: "QA Tester",
         timeline: qaTimelineEn,
         techDetails: { languages: [], frameworks: [], database: [], styling: [], tools: ["Full Stack", "QA Testing", "Documentation"], techniques: ["Manual QA Testing","Content Documentation"], typography: "DIN Next", loadTime: "140ms", mobileReady: true, colors: ["#1F3B44","#EDEDED","#C9A15A"], toolsAndSkills: ["Browser DevTools","Notion"] },
-        gallery: [{ image: "/images/projects/alssuna.png", caption: "Homepage preview" }],
+        gallery: [{ image: "/images/projects/alssuna.png", caption: "Homepage preview" }, { image: "/images/projects/gallery/alsunna-center-2.webp", caption: "Latest and most-viewed hadiths" }, { image: "/images/projects/gallery/alsunna-center-3.webp", caption: "Footer and newsletter" }, { image: "/images/projects/gallery/alsunna-center-4.webp", caption: "Mobile view" }],
       },
       {
         slug: "fatawapedia",
@@ -802,7 +802,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         role: "QA Tester",
         timeline: qaTimelineEn,
         techDetails: { languages: [], frameworks: [], database: [], styling: [], tools: ["Testing", "QA", "User Experience"], techniques: ["Manual QA Testing","UX Testing"], typography: "Noto Sans Arabic", loadTime: "80ms", mobileReady: true, colors: ["#1E3A45","#B9C08C","#FBF8E8"], toolsAndSkills: ["Browser DevTools","Notion"] },
-        gallery: [{ image: "/images/projects/fatawa.png", caption: "Homepage preview" }],
+        gallery: [{ image: "/images/projects/fatawa.png", caption: "Homepage preview" }, { image: "/images/projects/gallery/fatawapedia-2.webp", caption: "Featured and most-read fatwas" }, { image: "/images/projects/gallery/fatawapedia-3.webp", caption: "Fatwa categories" }, { image: "/images/projects/gallery/fatawapedia-4.webp", caption: "Fatwa sections and footer" }, { image: "/images/projects/gallery/fatawapedia-5.webp", caption: "Mobile view" }],
       },
       {
         slug: "alarjwan-restaurant",
@@ -817,7 +817,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         workType: "personal",
         timeline: buildTimelineEn,
         techDetails: { languages: ["HTML","CSS","JavaScript"], frameworks: ["Bootstrap"], database: [], styling: ["Bootstrap"], tools: ["Web Development", "Restaurant Management"], techniques: ["Responsive Design","Static Site Deployment"], typography: "Baloo Bhaijaan 2", loadTime: "110ms", mobileReady: true, colors: ["#3D4F32","#4C5F3E","#F1EEE7"], toolsAndSkills: ["VS Code","GitHub"] },
-        gallery: [{ image: "/images/projects/arjwan.png", caption: "Homepage preview" }],
+        gallery: [{ image: "/images/projects/arjwan.png", caption: "Homepage preview" }, { image: "/images/projects/gallery/alarjwan-restaurant-2.webp", caption: "About the restaurant" }, { image: "/images/projects/gallery/alarjwan-restaurant-3.webp", caption: "What we offer" }, { image: "/images/projects/gallery/alarjwan-restaurant-4.webp", caption: "Featured dishes" }, { image: "/images/projects/gallery/alarjwan-restaurant-5.webp", caption: "Mobile view" }],
       },
       {
         slug: "servizu-logistics",
@@ -832,7 +832,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         workType: "personal",
         timeline: buildTimelineEn,
         techDetails: { languages: ["HTML","CSS","JavaScript"], frameworks: ["Bootstrap"], database: [], styling: ["Bootstrap"], tools: ["Logistics", "Tracking Systems", "Web Apps"], techniques: ["Responsive Design","Static Site Deployment"], typography: "Baloo Bhaijaan 2", loadTime: "120ms", mobileReady: true, colors: ["#8B2E3C","#D4A94A","#FFFFFF"], toolsAndSkills: ["VS Code","GitHub"] },
-        gallery: [{ image: "/images/projects/ser.png", caption: "Homepage preview" }],
+        gallery: [{ image: "/images/projects/ser.png", caption: "Homepage preview" }, { image: "/images/projects/gallery/servizu-logistics-2.webp", caption: "About us" }, { image: "/images/projects/gallery/servizu-logistics-3.webp", caption: "Intro video" }, { image: "/images/projects/gallery/servizu-logistics-4.webp", caption: "Latest news" }],
       },
       {
         slug: "athkar",
@@ -847,7 +847,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         workType: "personal",
         timeline: buildTimelineEn,
         techDetails: { languages: ["HTML","CSS","JavaScript"], frameworks: ["Bootstrap"], database: [], styling: ["Bootstrap"], tools: ["Mobile Development", "Islamic Content"], techniques: ["Responsive Design","Static Site Deployment"], typography: "Baloo Bhaijaan 2", loadTime: "95ms", mobileReady: true, colors: ["#3A4A6B","#E8EDF5","#FFFFFF"], toolsAndSkills: ["VS Code","GitHub"] },
-        gallery: [{ image: "/images/projects/athkar.png", caption: "Homepage preview" }],
+        gallery: [{ image: "/images/projects/athkar.png", caption: "Homepage preview" }, { image: "/images/projects/gallery/athkar-2.webp", caption: "Expanded athkar section" }, { image: "/images/projects/gallery/athkar-3.webp", caption: "Mobile view" }],
       },
       {
         slug: "fatawapedia-dashboard",
@@ -892,7 +892,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         workType: "personal",
         timeline: dashboardTimelineEn,
         techDetails: { languages: ["DAX","Power Query M"], frameworks: ["Power BI"], database: [], styling: [], tools: ["Power BI", "Data Analysis", "Data Visualization"], techniques: ["Time-series Analysis","Interactive Filtering"], typography: "Segoe UI", loadTime: "120ms", mobileReady: true, colors: ["#1E93EB","#1B2A6B","#7A5FC4"], toolsAndSkills: ["Power BI Desktop","Excel"] },
-        gallery: [{ image: "/images/projects/sales.png", caption: "Dashboard preview" }],
+        gallery: [{ image: "/images/projects/sales.png", caption: "Dashboard preview" }, { image: "/images/projects/gallery/sales-dashboard-2.webp", caption: "Sales and profit by year" }, { image: "/images/projects/gallery/sales-dashboard-3.webp", caption: "Sales vs. target" }],
       },
       {
         slug: "jobs-dashboard-01",
@@ -907,7 +907,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         workType: "personal",
         timeline: dashboardTimelineEn,
         techDetails: { languages: ["DAX","Power Query M"], frameworks: ["Power BI"], database: [], styling: [], tools: ["Power BI", "Data Analysis", "Data Visualization"], techniques: ["Data Modeling","Comparative Analysis"], typography: "Segoe UI", loadTime: "95ms", mobileReady: true, colors: ["#2E86DE","#D6EAF8","#333333"], toolsAndSkills: ["Power BI Desktop","Excel"] },
-        gallery: [{ image: "/images/projects/Jobs01.png", caption: "Dashboard preview" }],
+        gallery: [{ image: "/images/projects/Jobs01.png", caption: "Dashboard preview" }, { image: "/images/projects/gallery/jobs-dashboard-01-2.webp", caption: "Data Engineer drill-through" }],
       },
     ],
     education: {
