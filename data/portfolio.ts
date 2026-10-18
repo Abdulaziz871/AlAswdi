@@ -73,6 +73,8 @@ type Project = {
   timeline: TimelineStage[];
   techDetails: TechDetails;
   gallery: ProjectGalleryImage[];
+  /** Hide the project from the site without deleting its data */
+  hidden?: boolean;
 };
 
 type Education = {
@@ -310,16 +312,16 @@ export const portfolioData: Record<Language, PortfolioContent> = {
       },
       {
         slug: "sunnah-hadith-search",
-        title: "منصة بحث السنة",
+        title: "منصة البحث العميق",
         description:
-          "طوّرت لمركز السنة منصة بحثية يلصق فيها الباحث نص الحديث، فتظهر له مباشرة أقرب الشروح المطابقة من الكتب المرفوعة، مع ملخص لأقوال الشرّاح.",
+          "طوّرت منصة بحثية عامة يرفع فيها الباحث كتبه من أي نوع، ثم يبحث داخلها بالمعنى لا باللفظ فقط، فتظهر له أقرب المقاطع المطابقة من كتبه مع ملخص لما ورد فيها.",
         technologies: ["Next.js", "RAG", "محرك بحث"],
         link: "https://deep-search-hadith.vercel.app/",
         github: "",
         image: "/images/projects/hadith.png",
         category: "تطوير",
         workType: "professional",
-        client: "مركز السنة",
+        client: "منصة البحث العميق",
         duration: "2026",
         role: "مطور",
         timeline: buildTimelineAr,
@@ -379,6 +381,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         timeline: buildTimelineAr,
         techDetails: { languages: ["HTML", "CSS"], frameworks: [], database: [], styling: ["Custom CSS","تصميم متجاوب"], tools: ["تصميم متجاوب"], techniques: ["تصميم متجاوب","اختبار متعدد المتصفحات"], typography: "Noto Sans Arabic", loadTime: "95ms", mobileReady: true, colors: ["#0D1117","#F0654A","#7EC8E3"], toolsAndSkills: ["VS Code","Figma"] },
         gallery: [{ image: "/images/projects/headline.png", caption: "معاينة الصفحة الرئيسية" }, { image: "/images/projects/gallery/headline-landing-2.webp", caption: "من هيدلاين" }, { image: "/images/projects/gallery/headline-landing-3.webp", caption: "الخدمات" }, { image: "/images/projects/gallery/headline-landing-4.webp", caption: "قسم التواصل" }],
+        hidden: true,
       },
       {
         slug: "alsunna-center",
@@ -698,16 +701,16 @@ export const portfolioData: Record<Language, PortfolioContent> = {
       },
       {
         slug: "sunnah-hadith-search",
-        title: "Sunnah Hadith Search",
+        title: "Deep Search Platform",
         description:
-          "Built for Al-Sunna Center — a research platform where scholars can paste a hadith text and instantly find the closest matching explanations from uploaded reference books, with summarized commentary pulled from multiple authors.",
+          "A general-purpose research platform where researchers upload their own books of any kind and search within them by meaning, not just keywords — instantly surfacing the closest matching passages with a concise summary of what they say.",
         technologies: ["NextJs", "RAG", "Search Engine"],
         link: "https://deep-search-hadith.vercel.app/",
         github: "",
         image: "/images/projects/hadith.png",
         category: "Development",
         workType: "professional",
-        client: "Al-Sunna Center",
+        client: "Deep Search Platform",
         duration: "2026",
         role: "Developer",
         timeline: buildTimelineEn,
@@ -767,6 +770,7 @@ export const portfolioData: Record<Language, PortfolioContent> = {
         timeline: buildTimelineEn,
         techDetails: { languages: ["HTML", "CSS"], frameworks: [], database: [], styling: ["Custom CSS","Responsive Design"], tools: ["Responsive Design"], techniques: ["Responsive Design","Cross-browser Testing"], typography: "Noto Sans Arabic", loadTime: "95ms", mobileReady: true, colors: ["#0D1117","#F0654A","#7EC8E3"], toolsAndSkills: ["VS Code","Figma"] },
         gallery: [{ image: "/images/projects/headline.png", caption: "Homepage preview" }, { image: "/images/projects/gallery/headline-landing-2.webp", caption: "About HeadLine" }, { image: "/images/projects/gallery/headline-landing-3.webp", caption: "Services" }, { image: "/images/projects/gallery/headline-landing-4.webp", caption: "Contact section" }],
+        hidden: true,
       },
       {
         slug: "alsunna-center",
@@ -941,5 +945,6 @@ export const portfolioData: Record<Language, PortfolioContent> = {
 };
 
 export function getPortfolioContent(language: Language) {
-  return portfolioData[language];
+  const content = portfolioData[language];
+  return { ...content, projects: content.projects.filter((project) => !project.hidden) };
 }
